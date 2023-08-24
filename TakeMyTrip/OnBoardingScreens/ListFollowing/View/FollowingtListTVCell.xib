@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Poppins-Medium.ttf">
+            <string>Poppins-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="FollowingtListTVCell" rowHeight="95" id="KGk-i7-Jjw" customClass="FollowingtListTVCell" customModule="TakeMyTrip" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="367" height="95"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="367" height="95"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zrS-8v-axC">
+                        <rect key="frame" x="0.0" y="0.0" width="367" height="95"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img5" translatesAutoresizingMaskIntoConstraints="NO" id="nNd-7G-7j4">
+                                <rect key="frame" x="0.0" y="19" width="58" height="57"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="58" id="wKO-as-x7t"/>
+                                    <constraint firstAttribute="height" constant="57" id="xOl-Hg-TZj"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isRounded" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Waloi" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oWV-yW-Amp">
+                                <rect key="frame" x="73" y="35.666666666666664" width="48.666666666666657" height="24"/>
+                                <fontDescription key="fontDescription" name="Poppins-Medium" family="Poppins" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hLT-dA-pKn">
+                                <rect key="frame" x="267" y="30" width="100" height="35"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="DmQ-UW-w8f"/>
+                                    <constraint firstAttribute="height" constant="35" id="Uzf-il-eLZ"/>
+                                </constraints>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Unfollow">
+                                    <color key="titleColor" red="0.93725490196078431" green="0.3529411764705882" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="0.93725490199999995" green="0.35294117650000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="hLT-dA-pKn" secondAttribute="trailing" id="8zi-SN-KQw"/>
+                            <constraint firstItem="hLT-dA-pKn" firstAttribute="centerY" secondItem="oWV-yW-Amp" secondAttribute="centerY" id="Hhi-7M-3w9"/>
+                            <constraint firstItem="nNd-7G-7j4" firstAttribute="centerY" secondItem="zrS-8v-axC" secondAttribute="centerY" id="JoX-pw-ptd"/>
+                            <constraint firstItem="nNd-7G-7j4" firstAttribute="leading" secondItem="zrS-8v-axC" secondAttribute="leading" id="MKx-MW-9SU"/>
+                            <constraint firstItem="oWV-yW-Amp" firstAttribute="centerY" secondItem="nNd-7G-7j4" secondAttribute="centerY" id="XKK-y3-3iI"/>
+                            <constraint firstItem="oWV-yW-Amp" firstAttribute="leading" secondItem="nNd-7G-7j4" secondAttribute="trailing" constant="15" id="xcr-6W-lOr"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="0.0"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="zrS-8v-axC" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="49z-qe-3O6"/>
+                    <constraint firstItem="zrS-8v-axC" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="ALn-SB-WHI"/>
+                    <constraint firstAttribute="bottom" secondItem="zrS-8v-axC" secondAttribute="bottom" id="Chx-Tv-UON"/>
+                    <constraint firstAttribute="trailing" secondItem="zrS-8v-axC" secondAttribute="trailing" id="lIp-0g-VU6"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="btnUnfollow" destination="hLT-dA-pKn" id="7a9-VZ-d8w"/>
+            </connections>
+            <point key="canvasLocation" x="213" y="-25"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="img5" width="1216" height="912"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

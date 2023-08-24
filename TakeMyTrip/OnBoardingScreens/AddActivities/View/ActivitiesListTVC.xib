@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ActivitiesListTVC" rowHeight="110" id="KGk-i7-Jjw" customClass="ActivitiesListTVC" customModule="TakeMyTrip" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="357" height="110"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="357" height="110"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Il3-05-fgI">
+                        <rect key="frame" x="0.0" y="0.0" width="357" height="90"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="World Tour Day 1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zI5-wi-YH9">
+                                <rect key="frame" x="20" y="30.666666666666671" width="143" height="29"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="29" id="Rwv-LN-GeI"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DTB-cu-pBy">
+                                <rect key="frame" x="316" y="34.666666666666664" width="21" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="21" id="6WG-Yh-ixL"/>
+                                    <constraint firstAttribute="height" constant="21" id="aEi-bj-MD7"/>
+                                </constraints>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" image="entypo_dots-three-vertical"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.95686274509803915" green="0.95686274509803915" blue="0.97254901960784312" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="DTB-cu-pBy" secondAttribute="trailing" constant="20" id="GDz-0d-WTM"/>
+                            <constraint firstItem="DTB-cu-pBy" firstAttribute="centerY" secondItem="zI5-wi-YH9" secondAttribute="centerY" id="XYW-Pn-TpD"/>
+                            <constraint firstItem="zI5-wi-YH9" firstAttribute="centerY" secondItem="Il3-05-fgI" secondAttribute="centerY" id="bd9-oH-yJM"/>
+                            <constraint firstItem="zI5-wi-YH9" firstAttribute="leading" secondItem="Il3-05-fgI" secondAttribute="leading" constant="20" id="nPR-Lj-C7G"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="25"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                <real key="value" value="1"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                <color key="value" red="0.76470588235294112" green="0.76470588235294112" blue="0.76470588235294112" alpha="1" colorSpace="calibratedRGB"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="Il3-05-fgI" secondAttribute="trailing" id="HR8-Ho-MAi"/>
+                    <constraint firstAttribute="bottom" secondItem="Il3-05-fgI" secondAttribute="bottom" constant="20" id="QZA-76-bP8"/>
+                    <constraint firstItem="Il3-05-fgI" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="bCt-Wt-r0y"/>
+                    <constraint firstItem="Il3-05-fgI" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="hdo-5W-dPh"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="btnAddActivity" destination="DTB-cu-pBy" id="v5Z-l6-Vo0"/>
+                <outlet property="lblActivityName" destination="zI5-wi-YH9" id="SmB-lY-kwc"/>
+                <outlet property="vWBackground" destination="Il3-05-fgI" id="FWv-sI-pWF"/>
+            </connections>
+            <point key="canvasLocation" x="-25" y="-82"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="entypo_dots-three-vertical" width="19" height="19"/>
+    </resources>
+</document>

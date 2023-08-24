@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CompleteTripCVCell" id="gTV-IL-0wX" customClass="CompleteTripCVCell" customModule="TakeMyTrip" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="271" height="217"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="271" height="217"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleAspectFill" translatesAutoresizingMaskIntoConstraints="NO" id="bDE-O0-wa6">
+                        <rect key="frame" x="0.0" y="0.0" width="271" height="217"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="img1" translatesAutoresizingMaskIntoConstraints="NO" id="lIU-hW-fqo">
+                                <rect key="frame" x="0.0" y="0.0" width="271" height="217"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lorem Ipsum is simply dummy text of the printing and typesetting industry." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pia-Ta-fvd">
+                                <rect key="frame" x="10" y="183" width="251" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.93725490199999995" green="0.35294117650000001" blue="0.0" alpha="0.70999999999999996" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="pia-Ta-fvd" secondAttribute="bottom" constant="10" id="3fh-7v-Jxk"/>
+                            <constraint firstAttribute="trailing" secondItem="pia-Ta-fvd" secondAttribute="trailing" constant="10" id="bMf-ys-Cx4"/>
+                            <constraint firstItem="pia-Ta-fvd" firstAttribute="leading" secondItem="bDE-O0-wa6" secondAttribute="leading" constant="10" id="fTg-2X-gIL"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="bDE-O0-wa6" secondAttribute="bottom" id="OuJ-bK-HjZ"/>
+                <constraint firstItem="bDE-O0-wa6" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="Qz5-vP-He9"/>
+                <constraint firstAttribute="trailing" secondItem="bDE-O0-wa6" secondAttribute="trailing" id="ofz-yh-0At"/>
+                <constraint firstItem="bDE-O0-wa6" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="r0I-2F-56l"/>
+            </constraints>
+            <size key="customSize" width="271" height="217"/>
+            <connections>
+                <outlet property="imgCompletedTrips" destination="lIU-hW-fqo" id="EAL-rR-Swq"/>
+                <outlet property="lblDiscription" destination="pia-Ta-fvd" id="8vT-kU-39N"/>
+            </connections>
+            <point key="canvasLocation" x="57" y="37"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="img1" width="2000" height="1333.5"/>
+    </resources>
+</document>

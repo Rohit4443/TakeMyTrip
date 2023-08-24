@@ -1,0 +1,54 @@
+PODS:
+  - GrowingTextView (0.7.2)
+  - IQKeyboardManagerSwift (6.5.12)
+  - Kingfisher (6.3.1)
+  - SDWebImage (5.17.0):
+    - SDWebImage/Core (= 5.17.0)
+  - SDWebImage/Core (5.17.0)
+  - Socket.IO-Client-Swift (15.1.0):
+    - Starscream (~> 3.1)
+  - Starscream (3.1.1)
+  - Swifter (2.5.0)
+  - SwiftyStoreKit (0.16.1)
+
+DEPENDENCIES:
+  - GrowingTextView
+  - IQKeyboardManagerSwift
+  - Kingfisher
+  - SDWebImage
+  - Socket.IO-Client-Swift (~> 15.1.0)
+  - Swifter (from `https://github.com/mattdonnelly/Swifter.git`)
+  - SwiftyStoreKit
+
+SPEC REPOS:
+  trunk:
+    - GrowingTextView
+    - IQKeyboardManagerSwift
+    - Kingfisher
+    - SDWebImage
+    - Socket.IO-Client-Swift
+    - Starscream
+    - SwiftyStoreKit
+
+EXTERNAL SOURCES:
+  Swifter:
+    :git: https://github.com/mattdonnelly/Swifter.git
+
+CHECKOUT OPTIONS:
+  Swifter:
+    :commit: f6888d61500f46ca6d1814fe2624056339eda986
+    :git: https://github.com/mattdonnelly/Swifter.git
+
+SPEC CHECKSUMS:
+  GrowingTextView: 876bf42005b5e4a4fd740597db12caaf41f0fe6c
+  IQKeyboardManagerSwift: 371b08cb39664fb56030f5345c815a4ffc74bbc0
+  Kingfisher: 016c8b653a35add51dd34a3aba36b580041acc74
+  SDWebImage: 750adf017a315a280c60fde706ab1e552a3ae4e9
+  Socket.IO-Client-Swift: 7cb44c0ffb86e158cee32d0642d30ec5fdcf8f61
+  Starscream: 4bb2f9942274833f7b4d296a55504dcfc7edb7b0
+  Swifter: 4c2f8cf320c2f751c10128f841d8e9bd8609d988
+  SwiftyStoreKit: 6b9c08810269f030586dac1fae8e75871a82e84a
+
+PODFILE CHECKSUM: 05f280e3e76af5b0322bc0c8012717f9cbd81370
+
+COCOAPODS: 1.11.3
