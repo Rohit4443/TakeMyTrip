@@ -19,7 +19,7 @@ class HomeFirstCVCell: UICollectionViewCell {
     //           super.awakeFromNib()
     override var isSelected: Bool {
         didSet {
-            // Update cell appearance based on selection state
+            
             if isSelected {
                 vWBackground.layer.borderColor = UIColor.init(r: 239, g: 90, b: 0, a: 1).cgColor
                 vWBackground.layer.borderWidth = 1

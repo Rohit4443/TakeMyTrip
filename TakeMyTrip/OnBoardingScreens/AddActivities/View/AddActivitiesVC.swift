@@ -7,14 +7,17 @@
 
 import UIKit
 
-class AddActivitiesVC: UIViewController, UITableViewDelegate,UITableViewDataSource {
+class AddActivitiesVC: UIViewController {
     
-    
-    
+    //MARK: - IBOutlets -
     @IBOutlet weak var tblActivitiesList: UITableView!
     
+    
+    //MARK: - Variables -
     var arrayAddList = ["World Tour Day 1","Mountain calling Day 2"]
     
+    
+    //MARK: - LifeCycleMethods -
     override func viewDidLoad() {
         super.viewDidLoad()
         tblActivitiesList.delegate = self
@@ -25,10 +28,20 @@ class AddActivitiesVC: UIViewController, UITableViewDelegate,UITableViewDataSour
         // Do any additional setup after loading the view.
     }
     
+    
+    //MARK: - IBAction -
     @IBAction func actionBack(_ sender: UIButton) {
         popVC()
         self.tabBarController?.tabBar.isHidden = true
     }
+    
+    
+}
+
+
+//MARK: - TableView Delegate and DataSource -
+extension  AddActivitiesVC: UITableViewDelegate,UITableViewDataSource {
+    
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 2
@@ -50,6 +63,4 @@ class AddActivitiesVC: UIViewController, UITableViewDelegate,UITableViewDataSour
         self.present(vc, true)
         
     }
-    
 }
-

@@ -9,6 +9,7 @@ import UIKit
 
 class NotifyTVCell: UITableViewCell {
     
+    //MARK: - LifeCycleMethods -
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

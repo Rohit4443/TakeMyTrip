@@ -7,13 +7,15 @@
 
 import UIKit
 
-class FollowingVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class FollowingVC: UIViewController{
     
     
-    
-    
+    //MARK: - IBOutlets -
     @IBOutlet weak var tblFollowingList: UITableView!
     
+    
+    
+    //MARK: - LifeCycleMethods -
     override func viewDidLoad() {
         super.viewDidLoad()
         tblFollowingList.delegate = self
@@ -21,10 +23,20 @@ class FollowingVC: UIViewController, UITableViewDelegate, UITableViewDataSource 
         tblFollowingList.register(UINib(nibName: "FollowingtListTVCell",bundle: nil), forCellReuseIdentifier: "FollowingtListTVCell")
     }
     
+    
+    //MARK: - IBAction -
     @IBAction func actionBack(_ sender: UIButton) {
         self.navigationController?.popViewController(animated: true)
         self.tabBarController?.tabBar.isHidden = false
     }
+    
+}
+
+
+
+//MARK: - TableView Delegate and DataSource -
+extension FollowingVC: UITableViewDelegate, UITableViewDataSource{
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 10
     }

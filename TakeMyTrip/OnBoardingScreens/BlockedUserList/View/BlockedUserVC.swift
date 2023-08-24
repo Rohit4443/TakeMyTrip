@@ -7,9 +7,14 @@
 
 import UIKit
 
-class BlockedUserVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class BlockedUserVC: UIViewController{
     
+    
+    //MARK: - IBOutlets -
     @IBOutlet weak var tblBlockList: UITableView!
+    
+    
+    //MARK: - LifeCycleMethods -
     override func viewDidLoad() {
         super.viewDidLoad()
         tblBlockList.delegate = self
@@ -18,10 +23,21 @@ class BlockedUserVC: UIViewController, UITableViewDelegate, UITableViewDataSourc
         tblBlockList.register(UINib(nibName: "FollowingtListTVCell",bundle: nil), forCellReuseIdentifier: "FollowingtListTVCell")
     }
     
+    
+    
+    //MARK: - IBAction -
     @IBAction func btnBack(_ sender: UIButton) {
         popVC()
         self.tabBarController?.tabBar.isHidden = true
     }
+    
+    
+}
+
+
+
+//MARK: - TableView Delegate and DataSource -
+extension BlockedUserVC: UITableViewDelegate, UITableViewDataSource{
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 10

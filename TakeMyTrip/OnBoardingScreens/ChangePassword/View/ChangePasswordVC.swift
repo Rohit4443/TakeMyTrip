@@ -7,12 +7,21 @@
 
 import UIKit
 
-class ChangePasswordVC: UIViewController, UITextFieldDelegate {
+class ChangePasswordVC: UIViewController {
     
+    
+    //MARK: - IBOutlets -
     @IBOutlet weak var txtFldOldPass: UITextField!
     @IBOutlet weak var txtFldNewPass: UITextField!
     @IBOutlet weak var txtFldReNewPass: UITextField!
+    
+    
+    
+    //MARK: - Variables -
     var selectedTextField: UITextField?
+    
+    
+    //MARK: - LifeCycleMethods -
     override func viewDidLoad() {
         super.viewDidLoad()
         txtFldOldPass.delegate = self
@@ -21,25 +30,32 @@ class ChangePasswordVC: UIViewController, UITextFieldDelegate {
         self.navigationController?.isNavigationBarHidden = true
     }
     
+    
+    
+    //MARK: - IBAction -
     @IBAction func actionBack(_ sender: UIButton) {
         popVC()
         self.tabBarController?.tabBar.isHidden = true
     }
+    
+}
+
+
+//MARK: - TextField Delegate -
+extension ChangePasswordVC: UITextFieldDelegate{
+    
     func textFieldDidBeginEditing(_ textField: UITextField) {
         selectedTextField = textField
         
-        // Set the border color of the selected text field to rgba
         textField.layer.borderColor = UIColor.init(r: 239, g: 90, b: 0, a: 1).cgColor
         
-        // Reset the border color of the previously selected text field to clear
         if let lastSelected = selectedTextField, lastSelected != textField {
             lastSelected.layer.borderColor = UIColor.clear.cgColor
         }
     }
     
     func textFieldDidEndEditing(_ textField: UITextField) {
-        // Reset the border color to clear when the text field becomes inactive
         textField.layer.borderColor = UIColor.clear.cgColor
     }
+    
 }
-

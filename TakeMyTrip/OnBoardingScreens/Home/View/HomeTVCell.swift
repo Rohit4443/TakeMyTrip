@@ -7,10 +7,12 @@
 
 import UIKit
 
-class HomeTVCell: UITableViewCell, UICollectionViewDelegate,UICollectionViewDataSource,UICollectionViewDelegateFlowLayout {
-    
+class HomeTVCell: UITableViewCell{
+    //MARK: - IBOutlets -
     @IBOutlet weak var collSecondVertically: UICollectionView!
     
+    
+    //MARK: - LifeCycleMethods -
     override func awakeFromNib() {
         super.awakeFromNib()
         collSecondVertically.delegate = self
@@ -23,6 +25,14 @@ class HomeTVCell: UITableViewCell, UICollectionViewDelegate,UICollectionViewData
         
         // Configure the view for the selected state
     }
+    
+}
+
+
+
+//MARK: - CollectionView Delegate and DataSource -
+extension HomeTVCell: UICollectionViewDelegate,UICollectionViewDataSource,UICollectionViewDelegateFlowLayout{
+    
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return 5
         
@@ -38,3 +48,5 @@ class HomeTVCell: UITableViewCell, UICollectionViewDelegate,UICollectionViewData
         return CGSize(width: collectionView.frame.size.width,height: collectionView.frame.size.height)
     }
 }
+
+

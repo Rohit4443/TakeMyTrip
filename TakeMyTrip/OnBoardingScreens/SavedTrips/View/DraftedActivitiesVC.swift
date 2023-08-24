@@ -7,20 +7,37 @@
 
 import UIKit
 
-class DraftedActivitiesVC: UIViewController,UITableViewDelegate, UITableViewDataSource {
+class DraftedActivitiesVC: UIViewController{
     
+    //MARK: - IBOutlets -
     @IBOutlet weak var tblActivities: UITableView!
+    
+    
+    //MARK: - LifeCycleMethods -
     override func viewDidLoad() {
         super.viewDidLoad()
         tblActivities.delegate = self
         tblActivities.dataSource = self
+        
         tblActivities.register(UINib(nibName: "CompleteTripCell", bundle: nil), forCellReuseIdentifier: "CompleteTripCell")
         self.navigationController?.isNavigationBarHidden = true
     }
+    
+    
+    
+    //MARK: - IBAction -
     @IBAction func actionBack(_ sender: UIButton) {
         popVC()
         self.tabBarController?.tabBar.isHidden = true
     }
+    
+    
+}
+
+
+
+//MARK: - TableView Delegate and DataSource -
+extension  DraftedActivitiesVC: UITableViewDelegate, UITableViewDataSource{
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 1
@@ -34,5 +51,3 @@ class DraftedActivitiesVC: UIViewController,UITableViewDelegate, UITableViewData
         250
     }
 }
-
-

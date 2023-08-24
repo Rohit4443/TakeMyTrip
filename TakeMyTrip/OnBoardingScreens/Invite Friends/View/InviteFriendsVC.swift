@@ -9,11 +9,17 @@ import UIKit
 
 class InviteFriendsVC: UIViewController {
     
+    
+    
+    //MARK: - LifeCycleMethods -
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationController?.isNavigationBarHidden = true
         
     }
+    
+    
+    //MARK: - IBAction -
     @IBAction func actionBack(_ sender: UIButton) {
         popVC()
         self.tabBarController?.tabBar.isHidden = true

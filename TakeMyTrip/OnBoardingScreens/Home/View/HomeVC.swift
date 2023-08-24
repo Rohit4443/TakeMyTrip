@@ -7,20 +7,20 @@
 
 import UIKit
 
-class HomeVC: UIViewController,UICollectionViewDelegate,UICollectionViewDataSource, UITableViewDelegate,UITableViewDataSource, UICollectionViewDelegateFlowLayout {
+class HomeVC: UIViewController {
     
-    
-    
-    
-    
-    
+    //MARK: - IBOutlets -
     @IBOutlet weak var tblHome: UITableView!
-    
     @IBOutlet weak var collFirstHorizontal: UICollectionView!
     
+    
+    //MARK: - Variables -
     var arraayFirstHorizontal = ["Adventurous","Extreme Activity","Beach Bum","Mountains"]
     let image = UIImage(named: "imgarrow")
     
+    
+    
+    //MARK: - LifeCycleMethods -
     override func viewDidLoad() {
         super.viewDidLoad()
         collFirstHorizontal.delegate = self
@@ -29,10 +29,13 @@ class HomeVC: UIViewController,UICollectionViewDelegate,UICollectionViewDataSour
         tblHome.dataSource = self
         
         collFirstHorizontal.register(UINib(nibName: "HomeFirstCVCell", bundle: nil), forCellWithReuseIdentifier: "HomeFirstCVCell")
-        
         tblHome.register(UINib(nibName: "HomeTVCell", bundle: nil), forCellReuseIdentifier: "HomeTVCell")
     }
     
+    
+    
+    
+    //MARK: - IBAction -
     @IBAction func actionSearch(_ sender: UIButton) {
         let vc = SearchUsersVC()
         self.navigationController?.pushViewController(vc, animated: true)
@@ -51,7 +54,13 @@ class HomeVC: UIViewController,UICollectionViewDelegate,UICollectionViewDataSour
         self.navigationController?.pushViewController(vc, animated: true)
         self.tabBarController?.tabBar.isHidden = true
     }
-    //mark --- First collection view methods
+    
+}
+
+
+
+//MARK: - CollectionView Delegate and DataSource -
+extension HomeVC: UICollectionViewDelegate,UICollectionViewDataSource{
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return arraayFirstHorizontal.count
@@ -69,7 +78,14 @@ class HomeVC: UIViewController,UICollectionViewDelegate,UICollectionViewDataSour
         return CGSize(width: arraayFirstHorizontal[indexPath.item].size(withAttributes: [NSAttributedString.Key.font : UIFont.systemFont(ofSize: 11)]).width + 10, height: 32)
         
     }
-    // mark ---- Tableview methods
+}
+
+
+
+
+//MARK: - TableView Delegate and DataSource -
+extension HomeVC: UITableViewDelegate,UITableViewDataSource, UICollectionViewDelegateFlowLayout{
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 10
     }
@@ -84,6 +100,4 @@ class HomeVC: UIViewController,UICollectionViewDelegate,UICollectionViewDataSour
     }
     
 }
-
-
 

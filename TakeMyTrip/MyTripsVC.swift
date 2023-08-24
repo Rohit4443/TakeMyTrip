@@ -7,7 +7,7 @@
 
 import UIKit
 
-class MyTripsVC: UIViewController,UITableViewDelegate, UITableViewDataSource {
+class MyTripsVC: UIViewController{
     // MARK: - IB Outlets -
     @IBOutlet weak var tblMyTrip: UITableView!
     @IBOutlet weak var BtnCompleted: UIButton!
@@ -15,7 +15,7 @@ class MyTripsVC: UIViewController,UITableViewDelegate, UITableViewDataSource {
     @IBOutlet weak var BtnPlanned: UIButton!
     @IBOutlet weak var lblPlannedLine: UILabel!
     
-    // MARK: - ViewdidLoad -
+    // MARK: - LifeCycleMethods -
     override func viewDidLoad() {
         super.viewDidLoad()
         tblMyTrip.delegate = self
@@ -26,7 +26,7 @@ class MyTripsVC: UIViewController,UITableViewDelegate, UITableViewDataSource {
         
     }
     
-    
+    // MARK: - IB Actions -
     @IBAction func actionCompleted(_ sender: UIButton) {
         lblCompletedLIne.backgroundColor = UIColor.init(r: 239, g: 90, b: 0, a: 1)
         lblPlannedLine.backgroundColor =  .clear
@@ -38,8 +38,14 @@ class MyTripsVC: UIViewController,UITableViewDelegate, UITableViewDataSource {
         lblPlannedLine.backgroundColor = UIColor.init(r: 239, g: 90, b: 0, a: 1)
         lblCompletedLIne.backgroundColor = .clear
         
-        
     }
+    
+}
+
+
+// MARK: - UITableView Delegate and DataSource -
+extension MyTripsVC:UITableViewDelegate, UITableViewDataSource{
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 1
     }
@@ -51,4 +57,5 @@ class MyTripsVC: UIViewController,UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         250
     }
+    
 }

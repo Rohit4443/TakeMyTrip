@@ -7,23 +7,38 @@
 
 import UIKit
 
-class ProfileVC: UIViewController, UICollectionViewDelegate,UICollectionViewDataSource,UICollectionViewDelegateFlowLayout {
-    @IBOutlet weak var collCompleteTrip: UICollectionView!
-    var arrayImg = ["img1","img1","img1","img1","img1","img1","img1"]
+class ProfileVC: UIViewController {
     
+    //MARK: - IBOutlets -
+    @IBOutlet weak var collCompleteTrip: UICollectionView!
     @IBOutlet weak var btnFollowers: UIButton!
     @IBOutlet weak var btnFollowing: UIButton!
+    
+    
+    //MARK: - Variables -
+    var arrayImg = ["img1","img1","img1","img1","img1","img1","img1"]
+    
+    
+    
+    
+    //MARK: - LifeCycleMethods -
     override func viewDidLoad() {
         super.viewDidLoad()
         collCompleteTrip.delegate = self
         collCompleteTrip.dataSource = self
         collCompleteTrip.frame = view.bounds
+        
         collCompleteTrip.register(UINib(nibName: "CompleteTripCVCell", bundle: nil), forCellWithReuseIdentifier: "CompleteTripCVCell")
+        
         collCompleteTrip.collectionViewLayout = ProfileVC.CreateLayout()
         self.navigationController?.isNavigationBarHidden = true
         
     }
     
+    
+    
+    
+    //MARK: - IBAction -
     @IBAction func actionSetting(_ sender: UIButton) {
         let vc = SettingsVC()
         self.navigationController?.pushViewController(vc, animated: true)
@@ -49,6 +64,14 @@ class ProfileVC: UIViewController, UICollectionViewDelegate,UICollectionViewData
         self.navigationController?.pushViewController(vc, animated: true)
         self.tabBarController?.tabBar.isHidden = true
     }
+    
+}
+
+
+
+
+//MARK: - CollectionView Delegate and DataSource -
+extension ProfileVC:        UICollectionViewDelegate,UICollectionViewDataSource,UICollectionViewDelegateFlowLayout{
     
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
@@ -106,12 +129,12 @@ class ProfileVC: UIViewController, UICollectionViewDelegate,UICollectionViewData
         
         
         
-        // section
         let section = NSCollectionLayoutSection(group: Group)
         
-        // return
         return UICollectionViewCompositionalLayout(section: section)
         
         
     }
 }
+
+

@@ -7,13 +7,22 @@
 
 import UIKit
 
-class SignUpViewController: UIViewController,UITextFieldDelegate{
+class SignUpViewController: UIViewController{
+    
+    
+    //MARK: - IBOutlets -
     @IBOutlet weak var txtFldFirstName: UITextField!
     @IBOutlet weak var txtFldLastName: UITextField!
     @IBOutlet weak var txtFldWhatTypeofTraveler: UITextField!
     @IBOutlet weak var txtFldPassword: UITextField!
     @IBOutlet weak var txtFldEmail: UITextField!
+    
+    //MARK: - Variables -
     var selectedTextField: UITextField?
+    
+    
+    
+    //MARK: - LifeCycleMethods -
     override func viewDidLoad() {
         super.viewDidLoad()
         txtFldFirstName.delegate = self
@@ -28,25 +37,10 @@ class SignUpViewController: UIViewController,UITextFieldDelegate{
         self.txtFldEmail.addPaddingToTextfield()
         self.navigationController?.isNavigationBarHidden = true
     }
-    func textFieldDidBeginEditing(_ textField: UITextField) {
-        selectedTextField = textField
-        
-        // Set the border color of the selected text field to rgba
-        textField.layer.borderColor = UIColor.init(r: 239, g: 90, b: 0, a: 1).cgColor
-        
-        // Reset the border color of the previously selected text field to clear
-        if let lastSelected = selectedTextField, lastSelected != textField {
-            lastSelected.layer.borderColor = UIColor.clear.cgColor
-        }
-    }
-    
-    func textFieldDidEndEditing(_ textField: UITextField) {
-        // Reset the border color to clear when the text field becomes inactive
-        textField.layer.borderColor = UIColor.clear.cgColor
-    }
     
     
     
+    //MARK: - IBAction -
     @IBAction func actionBack(_ sender: UIButton) {
         self.navigationController?.popViewController(animated: true)
     }
@@ -58,3 +52,23 @@ class SignUpViewController: UIViewController,UITextFieldDelegate{
     
 }
 
+
+//MARK: - TextField Delegate -
+extension SignUpViewController: UITextFieldDelegate{
+    
+    func textFieldDidBeginEditing(_ textField: UITextField) {
+        selectedTextField = textField
+        
+        textField.layer.borderColor = UIColor.init(r: 239, g: 90, b: 0, a: 1).cgColor
+        
+        if let lastSelected = selectedTextField, lastSelected != textField {
+            lastSelected.layer.borderColor = UIColor.clear.cgColor
+        }
+    }
+    
+    func textFieldDidEndEditing(_ textField: UITextField) {
+        
+        textField.layer.borderColor = UIColor.clear.cgColor
+    }
+    
+}

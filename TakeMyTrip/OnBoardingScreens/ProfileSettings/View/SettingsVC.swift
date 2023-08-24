@@ -7,22 +7,44 @@
 
 import UIKit
 
-class SettingsVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class SettingsVC: UIViewController{
     
+    
+    //MARK: - IBOutlets -
     @IBOutlet weak var tblSettingList: UITableView!
+    
+    
+    //MARK: - Variables -
     var arraysettings = ["Blocked User","Set Profile as","Drafted Activites","Change Password","Privacy Policy","Term & Conditions","Invite Friends","Delete Account"]
+    
+    
+    
+    //MARK: - LifeCycleMethods -
     override func viewDidLoad() {
         super.viewDidLoad()
         tblSettingList.delegate = self
         tblSettingList.dataSource = self
+        
         tblSettingList.register(UINib(nibName: "SettingsTVCell",bundle: nil), forCellReuseIdentifier: "SettingsTVCell")
         tabBarController?.tabBar.isHidden = true
     }
     
+    
+    
+    //MARK: - IBAction -
     @IBAction func actionBack(_ sender: UIButton) {
         popVC()
         tabBarController?.tabBar.isHidden = false
     }
+    
+}
+
+
+
+
+//MARK: - TableView Delegate and DataSource -
+extension  SettingsVC: UITableViewDelegate, UITableViewDataSource {
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return arraysettings.count
     }
@@ -94,5 +116,6 @@ class SettingsVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
         }
         
     }
+    
 }
 

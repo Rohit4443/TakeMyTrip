@@ -7,8 +7,13 @@
 
 import UIKit
 
-class NotificationVC: UIViewController, UITableViewDelegate,UITableViewDataSource {
+class NotificationVC: UIViewController{
+    
+    //MARK: - IBOutlets -
     @IBOutlet weak var tblNotification: UITableView!
+    
+    
+    //MARK: - LifeCycleMethods -
     override func viewDidLoad() {
         super.viewDidLoad()
         tblNotification.delegate = self
@@ -17,10 +22,19 @@ class NotificationVC: UIViewController, UITableViewDelegate,UITableViewDataSourc
         self.navigationController?.isNavigationBarHidden = true
         
     }
+    
+    //MARK: - IBAction -
     @IBAction func actionBack(_ sender: UIButton) {
         popVC()
         self.tabBarController?.tabBar.isHidden = false
     }
+    
+    
+}
+
+//MARK: - TableView Delegate and DataSource -
+
+extension NotificationVC:  UITableViewDelegate,UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 1
@@ -33,4 +47,3 @@ class NotificationVC: UIViewController, UITableViewDelegate,UITableViewDataSourc
         return 80
     }
 }
-

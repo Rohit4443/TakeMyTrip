@@ -7,17 +7,24 @@
 
 import UIKit
 
-class ChatMessagesVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class ChatMessagesVC: UIViewController {
     
     
+    //MARK: - IBOutlets -
     @IBOutlet weak var vWTopBackground: UIView!
     @IBOutlet weak var tblChat: UITableView!
+    
+    
+    //MARK: - LifeCycleMethods -
     override func viewDidLoad() {
         super.viewDidLoad()
         tblChat.delegate = self
         tblChat.dataSource = self
+        
         tblChat.register(UINib(nibName: "LeftTVCell", bundle: nil), forCellReuseIdentifier: "LeftTVCell")
+        
         tblChat.register(UINib(nibName: "RightTVCell",bundle: nil), forCellReuseIdentifier: "RightTVCell")
+        
         self.navigationItem.leftBarButtonItem = nil
         self.navigationItem.hidesBackButton = true
         self.vWTopBackground.shadowRadius = 4
@@ -27,9 +34,18 @@ class ChatMessagesVC: UIViewController, UITableViewDelegate, UITableViewDataSour
     }
     
     
+    
+    //MARK: - IBAction -
     @IBAction func actionBack(_ sender: UIButton) {
         popVC()
+        
     }
+    
+}
+
+
+//MARK: - TableView Delegate and DataSource -
+extension ChatMessagesVC: UITableViewDelegate, UITableViewDataSource{
     
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -52,4 +68,7 @@ class ChatMessagesVC: UIViewController, UITableViewDelegate, UITableViewDataSour
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 100
     }
+    
 }
+
+

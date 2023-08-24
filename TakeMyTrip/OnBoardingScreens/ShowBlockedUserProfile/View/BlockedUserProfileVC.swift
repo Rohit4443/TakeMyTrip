@@ -9,16 +9,20 @@ import UIKit
 
 class BlockedUserProfileVC: UIViewController {
     
+    
+    //MARK: - LifeCycleMethods -
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationController?.isNavigationBarHidden = true
     }
     
     
+    
+    //MARK: - IBAction -
     @IBAction func btnBack(_ sender: UIButton) {
         popVC()
         self.tabBarController?.tabBar.isHidden = true
-
+        
     }
     /*
      // MARK: - Navigation
