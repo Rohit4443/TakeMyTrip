@@ -15,18 +15,22 @@ class HomeFirstCVCell: UICollectionViewCell {
     
     @IBOutlet weak var vWBackground: UIView!
     
-    //       override func awakeFromNib() {
-    //           super.awakeFromNib()
-    override var isSelected: Bool {
-        didSet {
-            
-            if isSelected {
-                vWBackground.layer.borderColor = UIColor.init(r: 239, g: 90, b: 0, a: 1).cgColor
-                vWBackground.layer.borderWidth = 1
-            } else {
-                vWBackground.layer.borderColor = UIColor.clear.cgColor
+    override func awakeFromNib() {
+        super.awakeFromNib()
+
+        
+    }
+        override var isSelected: Bool {
+            didSet {
+                
+                if isSelected {
+                    vWBackground.layer.borderColor = UIColor.init(r: 239, g: 90, b: 0, a: 1).cgColor
+                    vWBackground.layer.borderWidth = 1
+                } else {
+                    vWBackground.layer.borderColor = UIColor.clear.cgColor
+                }
             }
         }
+        
     }
-    
-}
+

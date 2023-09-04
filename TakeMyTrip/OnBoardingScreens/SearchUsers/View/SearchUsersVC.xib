@@ -84,7 +84,7 @@
                             </constraints>
                         </view>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Recent Search" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NZ9-eB-HiH">
-                            <rect key="frame" x="30" y="100" width="123" height="26"/>
+                            <rect key="frame" x="30" y="100" width="112" height="26"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="26" id="GFM-FV-w4E"/>
                             </constraints>
@@ -96,8 +96,8 @@
                             <rect key="frame" x="30" y="126" width="315" height="541"/>
                             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             <connections>
-                                <outlet property="dataSource" destination="cW4-WK-yeW" id="lPL-4S-o9G"/>
-                                <outlet property="delegate" destination="cW4-WK-yeW" id="5n9-fB-sq3"/>
+                                <outlet property="dataSource" destination="-1" id="ED0-kl-hfL"/>
+                                <outlet property="delegate" destination="-1" id="aV8-qL-8R2"/>
                             </connections>
                         </tableView>
                     </subviews>

@@ -10,10 +10,10 @@ import UIKit
 class LoginViewController: UIViewController{
     
     //MARK: - IBOutlets -
-    @IBOutlet weak var txtEmail: UITextField!
-    @IBOutlet weak var txtPassword: UITextField!
+    @IBOutlet weak var txtFldEmail: UITextField!
+    @IBOutlet weak var txtFldPassword: UITextField!
     @IBOutlet weak var btnLogin: UIButton!
-    @IBOutlet weak var passwordVisibilty: UIButton!
+    @IBOutlet weak var btnPasswordVisibilty: UIButton!
     
     
     //MARK: - Variables -
@@ -23,10 +23,10 @@ class LoginViewController: UIViewController{
     //MARK: - LifeCycleMethods -
     override func viewDidLoad() {
         super.viewDidLoad()
-        txtEmail.delegate = self
-        txtPassword.delegate = self
-        self.txtEmail.addPaddingToTextfield()
-        self.txtPassword.addPaddingToPasswordTextField()
+        txtFldEmail.delegate = self
+        txtFldPassword.delegate = self
+        self.txtFldEmail.addPaddingToTextfield()
+        self.txtFldPassword.addPaddingToPasswordTextField()
         
         self.navigationController?.isNavigationBarHidden = true
         

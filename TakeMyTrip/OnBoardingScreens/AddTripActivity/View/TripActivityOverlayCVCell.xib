@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Poppins-Regular.ttf">
+            <string>Poppins-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="TripActivityOverlayCVCell" id="gTV-IL-0wX" customClass="TripActivityOverlayCVCell" customModule="TakeMyTrip" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="334" height="536"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="334" height="536"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rD9-82-ZvC">
+                        <rect key="frame" x="0.0" y="0.0" width="334" height="536"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_imgTrip" translatesAutoresizingMaskIntoConstraints="NO" id="jYA-Jt-NUB">
+                                <rect key="frame" x="0.0" y="0.0" width="334" height="536"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3II-NA-scm">
+                                <rect key="frame" x="20" y="30" width="42" height="42"/>
+                                <color key="backgroundColor" white="1" alpha="0.46846543874172186" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="42" id="9DT-73-5Vc"/>
+                                    <constraint firstAttribute="height" constant="42" id="dIu-7e-SaT"/>
+                                </constraints>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" image="ic_backbtn"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isRounded" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mountain calling" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vX6-hr-Gaa">
+                                <rect key="frame" x="20" y="477" width="224" height="24"/>
+                                <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vRJ-pW-lGg">
+                                <rect key="frame" x="264" y="464" width="50" height="50"/>
+                                <color key="backgroundColor" white="1" alpha="0.265625" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="Miz-SI-it5"/>
+                                    <constraint firstAttribute="width" constant="50" id="aav-jB-Bfv"/>
+                                </constraints>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" image="ic_btnPerson"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isRounded" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="3II-NA-scm" firstAttribute="top" secondItem="rD9-82-ZvC" secondAttribute="top" constant="30" id="3yH-OY-57d"/>
+                            <constraint firstItem="jYA-Jt-NUB" firstAttribute="leading" secondItem="rD9-82-ZvC" secondAttribute="leading" id="5hD-t0-QJ8"/>
+                            <constraint firstAttribute="trailing" secondItem="jYA-Jt-NUB" secondAttribute="trailing" id="JYN-aJ-ECa"/>
+                            <constraint firstAttribute="bottom" secondItem="jYA-Jt-NUB" secondAttribute="bottom" id="OXK-7z-VvT"/>
+                            <constraint firstAttribute="trailing" secondItem="vRJ-pW-lGg" secondAttribute="trailing" constant="20" id="eik-4X-GNu"/>
+                            <constraint firstItem="vRJ-pW-lGg" firstAttribute="centerY" secondItem="vX6-hr-Gaa" secondAttribute="centerY" id="fGs-wL-KxM"/>
+                            <constraint firstItem="vRJ-pW-lGg" firstAttribute="leading" secondItem="vX6-hr-Gaa" secondAttribute="trailing" constant="20" id="gJn-u7-r3e"/>
+                            <constraint firstAttribute="bottom" secondItem="vX6-hr-Gaa" secondAttribute="bottom" constant="35" id="jPJ-uf-TPZ"/>
+                            <constraint firstItem="jYA-Jt-NUB" firstAttribute="top" secondItem="rD9-82-ZvC" secondAttribute="top" id="nYm-zC-DeH"/>
+                            <constraint firstItem="3II-NA-scm" firstAttribute="leading" secondItem="rD9-82-ZvC" secondAttribute="leading" constant="20" id="nzG-LA-IBg"/>
+                            <constraint firstItem="vX6-hr-Gaa" firstAttribute="leading" secondItem="rD9-82-ZvC" secondAttribute="leading" constant="20" id="rsx-cp-WMt"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="rD9-82-ZvC" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="QRd-Fa-rhC"/>
+                <constraint firstItem="rD9-82-ZvC" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="WNZ-JK-KCp"/>
+                <constraint firstAttribute="trailing" secondItem="rD9-82-ZvC" secondAttribute="trailing" id="joX-wX-XN9"/>
+                <constraint firstAttribute="bottom" secondItem="rD9-82-ZvC" secondAttribute="bottom" id="r89-Uj-3F3"/>
+            </constraints>
+            <size key="customSize" width="334" height="399"/>
+            <point key="canvasLocation" x="203.19999999999999" y="52.623688155922046"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="ic_backbtn" width="40" height="18.5"/>
+        <image name="ic_btnPerson" width="14" height="24"/>
+        <image name="ic_imgTrip" width="381" height="536"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

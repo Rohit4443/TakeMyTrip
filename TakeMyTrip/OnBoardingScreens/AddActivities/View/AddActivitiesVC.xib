@@ -44,7 +44,7 @@
                                     </connections>
                                 </button>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Activities" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PDF-Jq-SXg">
-                                    <rect key="frame" x="51.5" y="24" width="96" height="32"/>
+                                    <rect key="frame" x="51.5" y="24" width="84.5" height="32"/>
                                     <constraints>
                                         <constraint firstAttribute="height" constant="32" id="z6P-o3-3ww"/>
                                     </constraints>
@@ -103,6 +103,9 @@
                             <userDefinedRuntimeAttributes>
                                 <userDefinedRuntimeAttribute type="boolean" keyPath="isRounded" value="YES"/>
                             </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="actionAddActivity:" destination="-1" eventType="touchUpInside" id="B9X-gi-Uop"/>
+                            </connections>
                         </button>
                     </subviews>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>

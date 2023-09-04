@@ -19,6 +19,9 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FilterVC" customModule="TakeMyTrip" customModuleProvider="target">
             <connections>
+                <outlet property="txtFldNumberOfDays" destination="s3P-hA-LI4" id="i5w-gr-JCk"/>
+                <outlet property="txtFldPlace" destination="VNC-eh-ecs" id="pN2-UA-br9"/>
+                <outlet property="txtFldTripCategory" destination="c2B-UA-r7y" id="CPb-vX-bPQ"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>

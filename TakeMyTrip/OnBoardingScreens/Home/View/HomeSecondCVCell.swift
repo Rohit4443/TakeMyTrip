@@ -9,8 +9,8 @@ import UIKit
 
 class HomeSecondCVCell: UICollectionViewCell {
     
-    @IBOutlet weak var PageControl: UIPageControl!
-    @IBOutlet weak var btnSelectOption: UIButton!
+
+    @IBOutlet weak var btnReport: UIButton!
     @IBOutlet weak var btnSave: UIButton!
     @IBOutlet weak var btnComment: UIButton!
     @IBOutlet weak var btnForward: UIButton!
@@ -21,16 +21,10 @@ class HomeSecondCVCell: UICollectionViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        //        self.PageControl.numberOfPages = 4
-        //        self.PageControl.currentPage = 0
-        //        self.PageControl.tintColor = UIColor.red
-        //        self.PageControl.pageIndicatorTintColor = UIColor.black
-        //        self.PageControl.currentPageIndicatorTintColor = UIColor.green
-        
+       
     }
-    
-    @IBAction func ChangePage(_ sender: UIPageControl) {
-    }
+  
     
 }
+
 

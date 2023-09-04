@@ -16,7 +16,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeVc" customModule="TakeMyTrip" customModuleProvider="target">
             <connections>
-                <outlet property="collFirstHorizontal" destination="4E8-Qt-HTK" id="m1c-86-gnb"/>
+                <outlet property="collFirstHorizontal" destination="xAN-GS-n06" id="Rzp-zB-QEa"/>
                 <outlet property="tblHome" destination="Zko-gd-hYm" id="woL-dI-639"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -201,47 +201,47 @@
                                 </userDefinedRuntimeAttribute>
                             </userDefinedRuntimeAttributes>
                         </view>
-                        <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="4E8-Qt-HTK">
-                            <rect key="frame" x="0.0" y="163" width="375" height="32"/>
+                        <tableView clipsSubviews="YES" contentMode="scaleAspectFill" alwaysBounceVertical="YES" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="Zko-gd-hYm">
+                            <rect key="frame" x="20" y="190" width="335" height="457"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <color key="sectionIndexBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <outlet property="dataSource" destination="-1" id="zfU-ab-1qa"/>
+                                <outlet property="delegate" destination="-1" id="j7q-Bt-Qml"/>
+                            </connections>
+                        </tableView>
+                        <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="xAN-GS-n06">
+                            <rect key="frame" x="0.0" y="148" width="375" height="32"/>
                             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             <constraints>
-                                <constraint firstAttribute="height" constant="32" id="uix-Ko-lW0"/>
+                                <constraint firstAttribute="height" constant="32" id="8VI-Gg-GDK"/>
                             </constraints>
-                            <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" automaticEstimatedItemSize="YES" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="shq-hU-ZC7">
+                            <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="4qx-tN-Frd">
                                 <size key="itemSize" width="128" height="128"/>
                                 <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                 <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                 <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                             </collectionViewFlowLayout>
                             <connections>
-                                <outlet property="dataSource" destination="i5M-Pr-FkT" id="cax-Gx-e57"/>
-                                <outlet property="delegate" destination="i5M-Pr-FkT" id="Lsc-uB-jKf"/>
+                                <outlet property="dataSource" destination="-1" id="9qx-WV-54S"/>
+                                <outlet property="delegate" destination="-1" id="lbo-F8-3hX"/>
                             </connections>
                         </collectionView>
-                        <tableView clipsSubviews="YES" contentMode="scaleAspectFill" alwaysBounceVertical="YES" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="Zko-gd-hYm">
-                            <rect key="frame" x="20" y="215" width="335" height="432"/>
-                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            <color key="sectionIndexBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            <connections>
-                                <outlet property="dataSource" destination="IOn-iG-9Cz" id="X07-MS-hji"/>
-                                <outlet property="delegate" destination="IOn-iG-9Cz" id="9iE-04-1FC"/>
-                            </connections>
-                        </tableView>
                     </subviews>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     <constraints>
-                        <constraint firstItem="Zko-gd-hYm" firstAttribute="top" secondItem="4E8-Qt-HTK" secondAttribute="bottom" constant="20" id="2rk-fy-Xnp"/>
                         <constraint firstItem="4jH-wF-ve2" firstAttribute="top" secondItem="IOn-iG-9Cz" secondAttribute="top" id="6Wr-ur-uwM"/>
                         <constraint firstAttribute="trailing" secondItem="Zko-gd-hYm" secondAttribute="trailing" constant="20" id="6go-Q1-MBS"/>
-                        <constraint firstAttribute="trailing" secondItem="4E8-Qt-HTK" secondAttribute="trailing" id="DS5-hN-cTO"/>
+                        <constraint firstItem="xAN-GS-n06" firstAttribute="leading" secondItem="IOn-iG-9Cz" secondAttribute="leading" id="DIt-cX-Pid"/>
                         <constraint firstAttribute="bottom" secondItem="Zko-gd-hYm" secondAttribute="bottom" id="EzN-Mu-vy9"/>
                         <constraint firstAttribute="trailing" secondItem="4jH-wF-ve2" secondAttribute="trailing" id="L2a-nE-ouV"/>
-                        <constraint firstItem="4E8-Qt-HTK" firstAttribute="top" secondItem="Ihm-du-rEi" secondAttribute="bottom" constant="20" id="Lb3-MP-Ozg"/>
                         <constraint firstItem="Ihm-du-rEi" firstAttribute="top" secondItem="4jH-wF-ve2" secondAttribute="bottom" constant="10" id="Mwn-BV-9L6"/>
-                        <constraint firstItem="4E8-Qt-HTK" firstAttribute="leading" secondItem="IOn-iG-9Cz" secondAttribute="leading" id="SF9-3s-2n0"/>
+                        <constraint firstItem="xAN-GS-n06" firstAttribute="top" secondItem="Ihm-du-rEi" secondAttribute="bottom" constant="5" id="aws-gI-Fxx"/>
                         <constraint firstItem="Ihm-du-rEi" firstAttribute="centerX" secondItem="IOn-iG-9Cz" secondAttribute="centerX" id="b4J-Ar-xK5"/>
                         <constraint firstItem="Zko-gd-hYm" firstAttribute="leading" secondItem="IOn-iG-9Cz" secondAttribute="leading" constant="20" id="f7R-ju-bvJ"/>
+                        <constraint firstAttribute="trailing" secondItem="xAN-GS-n06" secondAttribute="trailing" id="kji-Ik-wlG"/>
                         <constraint firstItem="4jH-wF-ve2" firstAttribute="leading" secondItem="IOn-iG-9Cz" secondAttribute="leading" id="puC-7F-CsT"/>
+                        <constraint firstItem="Zko-gd-hYm" firstAttribute="top" secondItem="xAN-GS-n06" secondAttribute="bottom" constant="10" id="uJg-Uh-Cw2"/>
                     </constraints>
                 </view>
             </subviews>
@@ -253,7 +253,7 @@
                 <constraint firstItem="IOn-iG-9Cz" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" id="cyH-mw-A6g"/>
                 <constraint firstItem="IOn-iG-9Cz" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="rUA-Ls-p4J"/>
             </constraints>
-            <point key="canvasLocation" x="-105" y="-353"/>
+            <point key="canvasLocation" x="-114.40000000000001" y="-43.628185907046479"/>
         </view>
     </objects>
     <resources>

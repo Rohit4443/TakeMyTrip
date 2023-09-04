@@ -7,6 +7,7 @@
 
 import UIKit
 
+@available(iOS 14.0, *)
 class CreateTripViewController: UIViewController{
     
     // MARK: - IB Outlets -

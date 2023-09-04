@@ -7,6 +7,7 @@
 
 import UIKit
 
+
 class AddActivitiesVC: UIViewController {
     
     //MARK: - IBOutlets -
@@ -30,6 +31,15 @@ class AddActivitiesVC: UIViewController {
     
     
     //MARK: - IBAction -
+    
+    @IBAction func actionAddActivity(_ sender: UIButton) {
+        let vc = AddNewActivityVC()
+        self.navigationController?.pushViewController(vc, animated: true)
+        self.navigationController?.navigationBar.isHidden = true
+        
+    }
+    
+    
     @IBAction func actionBack(_ sender: UIButton) {
         popVC()
         self.tabBarController?.tabBar.isHidden = true

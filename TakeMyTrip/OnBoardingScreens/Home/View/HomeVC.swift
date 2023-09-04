@@ -7,10 +7,13 @@
 
 import UIKit
 
-class HomeVC: UIViewController {
+class HomeVC: UIViewController{
+    
+    
     
     //MARK: - IBOutlets -
     @IBOutlet weak var tblHome: UITableView!
+    
     @IBOutlet weak var collFirstHorizontal: UICollectionView!
     
     
@@ -84,7 +87,7 @@ extension HomeVC: UICollectionViewDelegate,UICollectionViewDataSource{
 
 
 //MARK: - TableView Delegate and DataSource -
-extension HomeVC: UITableViewDelegate,UITableViewDataSource, UICollectionViewDelegateFlowLayout{
+extension HomeVC: UITableViewDelegate,UITableViewDataSource, HomeTVCellDelegate{
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 10
@@ -92,7 +95,20 @@ extension HomeVC: UITableViewDelegate,UITableViewDataSource, UICollectionViewDel
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "HomeTVCell", for: indexPath)as! HomeTVCell
+        cell.delegate = self
         return cell
+    }
+    
+    func homeTVCell(_ cell: HomeTVCell, didTapCommentIn index: Int) {
+        let vc = CommentsVC()
+        vc.modalPresentationStyle = .overFullScreen
+        present(vc, animated: true, completion: nil)
+    }
+    
+    func homeTVCell(_ cell: HomeTVCell, didTapReportIn index: Int) {
+        let vc = ReportVC()
+        vc.modalPresentationStyle = .overFullScreen
+        present(vc, animated: true, completion: nil)
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {

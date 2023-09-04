@@ -61,7 +61,7 @@
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7cH-lA-LLP">
-                                            <rect key="frame" x="0.0" y="5" width="188" height="30"/>
+                                            <rect key="frame" x="0.0" y="3.5" width="188" height="33"/>
                                             <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="15"/>
                                             <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                             <state key="normal" title="Completed">
@@ -97,7 +97,7 @@
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dsR-cr-vYO" userLabel="PlannedPlanned">
-                                            <rect key="frame" x="0.0" y="5" width="188" height="30"/>
+                                            <rect key="frame" x="0.0" y="3.5" width="188" height="33"/>
                                             <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="15"/>
                                             <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                             <state key="normal" title="Planned">
@@ -131,8 +131,8 @@
                             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <color key="separatorColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <connections>
-                                <outlet property="dataSource" destination="Mvc-LH-aCi" id="BJ7-vp-Cp1"/>
-                                <outlet property="delegate" destination="Mvc-LH-aCi" id="z5r-UJ-8Ln"/>
+                                <outlet property="dataSource" destination="-1" id="nu3-C0-Qkg"/>
+                                <outlet property="delegate" destination="-1" id="sEc-1n-J1R"/>
                             </connections>
                         </tableView>
                     </subviews>

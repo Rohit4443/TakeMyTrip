@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="AddNewActivityCVCell" id="gTV-IL-0wX" customClass="AddNewActivityCVCell" customModule="TakeMyTrip" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="149" height="180"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="149" height="180"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bnl-4T-vdo">
+                        <rect key="frame" x="0.0" y="0.0" width="149" height="180"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_addPhoto" translatesAutoresizingMaskIntoConstraints="NO" id="wrK-hz-Bne">
+                                <rect key="frame" x="10" y="0.0" width="131" height="170"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RIM-TV-ejX">
+                                <rect key="frame" x="126" y="157" width="22.5" height="22.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="22.699999999999999" id="GG0-mo-npc"/>
+                                    <constraint firstAttribute="width" constant="22.699999999999999" id="HnO-lY-iG1"/>
+                                </constraints>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" image="ic_crossbtn"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="wrK-hz-Bne" secondAttribute="trailing" constant="8" id="6Xt-SD-ka9"/>
+                            <constraint firstItem="wrK-hz-Bne" firstAttribute="leading" secondItem="bnl-4T-vdo" secondAttribute="leading" constant="10" id="7zk-HL-L9K"/>
+                            <constraint firstItem="RIM-TV-ejX" firstAttribute="leading" secondItem="wrK-hz-Bne" secondAttribute="trailing" constant="-15" id="FIH-oV-Ljn"/>
+                            <constraint firstItem="RIM-TV-ejX" firstAttribute="top" secondItem="wrK-hz-Bne" secondAttribute="bottom" constant="-13" id="GTS-gS-LdQ"/>
+                            <constraint firstItem="wrK-hz-Bne" firstAttribute="top" secondItem="bnl-4T-vdo" secondAttribute="top" id="LWR-7s-ENf"/>
+                            <constraint firstAttribute="bottom" secondItem="wrK-hz-Bne" secondAttribute="bottom" constant="10" id="gqL-XI-Zyl"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="bnl-4T-vdo" secondAttribute="trailing" id="1Cz-Tn-otc"/>
+                <constraint firstItem="bnl-4T-vdo" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="9ae-5H-LFs"/>
+                <constraint firstItem="bnl-4T-vdo" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="Agw-4g-8XW"/>
+                <constraint firstAttribute="bottom" secondItem="bnl-4T-vdo" secondAttribute="bottom" id="s1e-mV-9qe"/>
+            </constraints>
+            <size key="customSize" width="149" height="180"/>
+            <connections>
+                <outlet property="btnDelete" destination="RIM-TV-ejX" id="L0i-Lg-Z2y"/>
+                <outlet property="imgAdd" destination="wrK-hz-Bne" id="w0L-ag-pdJ"/>
+            </connections>
+            <point key="canvasLocation" x="-527.20000000000005" y="-37.781109445277366"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="ic_addPhoto" width="117" height="164.5"/>
+        <image name="ic_crossbtn" width="31" height="31"/>
+    </resources>
+</document>

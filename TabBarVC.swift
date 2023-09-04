@@ -9,17 +9,15 @@ import UIKit
 
 
 class TabBarVC: UITabBarController {
-    //
-    //    var attributesForTitle: [NSAttributedString.Key : Any] = [:] = [:] {
-    //      return [NSAttributedString.Key.font: UIFont.setCustom(.Poppins_Medium, 12)]
-    //        //UIFont.systemFont(ofSize: 10)
-    //    }
+   
+    
     var currentController: UIViewController?
     
     override func viewDidLoad() {
         super.viewDidLoad()
         setNotificationAbsorver()
         self.setTabController()
+    
     }
     
     func setNotificationAbsorver() {
@@ -44,6 +42,8 @@ class TabBarVC: UITabBarController {
         //        self.tabBar.shadowOffset = CGSize(width: 0, height: 1)
         //        self.tabBar.shadowOpacity = 10
         //        self.tabBar.tintColor = UIColor(hexString: "#207FFA")
+        
+       
         
         let controller1 = HomeVC()
         let controller2 = MyTripsVC()
@@ -85,5 +85,4 @@ class TabBarVC: UITabBarController {
         self.viewControllers = [v1, v2, v3, v4, v5]
     }
 }
-
 

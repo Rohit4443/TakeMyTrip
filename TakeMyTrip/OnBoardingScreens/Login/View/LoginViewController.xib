@@ -17,9 +17,9 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LoginViewController" customModule="TakeMyTrip" customModuleProvider="target">
             <connections>
                 <outlet property="btnLogin" destination="tTT-sG-8c1" id="tB2-u6-oi5"/>
-                <outlet property="passwordVisibilty" destination="1JU-xU-dnn" id="Yi0-a4-F2L"/>
-                <outlet property="txtEmail" destination="7uy-uk-Pz1" id="m7L-ej-6ak"/>
-                <outlet property="txtPassword" destination="VGy-Q0-8bm" id="Rly-Tl-zS7"/>
+                <outlet property="btnPasswordVisibilty" destination="1JU-xU-dnn" id="SQ5-EX-JEl"/>
+                <outlet property="txtFldEmail" destination="7uy-uk-Pz1" id="91f-RM-9tQ"/>
+                <outlet property="txtFldPassword" destination="VGy-Q0-8bm" id="D1j-MT-foj"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>

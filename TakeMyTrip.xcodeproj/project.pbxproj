@@ -15,6 +15,10 @@
 		5F2F0A292A839B8F0088170F /* HomeVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5F2F0A272A839B8F0088170F /* HomeVC.xib */; };
 		5F427BE22A95E89A00F18D9B /* FilterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F427BE02A95E89A00F18D9B /* FilterVC.swift */; };
 		5F427BE32A95E89A00F18D9B /* FilterVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5F427BE12A95E89A00F18D9B /* FilterVC.xib */; };
+		5F75BE092AA09C34002B6DA3 /* AddTripActivityOverlayVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F75BE072AA09C34002B6DA3 /* AddTripActivityOverlayVC.swift */; };
+		5F75BE0A2AA09C34002B6DA3 /* AddTripActivityOverlayVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5F75BE082AA09C34002B6DA3 /* AddTripActivityOverlayVC.xib */; };
+		5F75BE0D2AA09EC4002B6DA3 /* TripActivityOverlayCVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F75BE0B2AA09EC4002B6DA3 /* TripActivityOverlayCVCell.swift */; };
+		5F75BE0E2AA09EC4002B6DA3 /* TripActivityOverlayCVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5F75BE0C2AA09EC4002B6DA3 /* TripActivityOverlayCVCell.xib */; };
 		5F7FCCD22A8257BC00010FBE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F7FCCD12A8257BC00010FBE /* AppDelegate.swift */; };
 		5F7FCCD42A8257BC00010FBE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F7FCCD32A8257BC00010FBE /* SceneDelegate.swift */; };
 		5F7FCCD62A8257BC00010FBE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F7FCCD52A8257BC00010FBE /* ViewController.swift */; };
@@ -54,6 +58,12 @@
 		5F8EF1352A836BF0008BE6E6 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5F8EF1332A836BF0008BE6E6 /* LoginViewController.xib */; };
 		5F8EF1392A837480008BE6E6 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F8EF1372A837480008BE6E6 /* SignUpViewController.swift */; };
 		5F8EF13A2A837480008BE6E6 /* SignUpViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5F8EF1382A837480008BE6E6 /* SignUpViewController.xib */; };
+		5F8F735E2A9CD5A2009D244A /* ReportVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F8F735C2A9CD5A2009D244A /* ReportVC.swift */; };
+		5F8F735F2A9CD5A2009D244A /* ReportVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5F8F735D2A9CD5A2009D244A /* ReportVC.xib */; };
+		5F9060432A9C7AAC00B512FC /* CommentsTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F9060412A9C7AAC00B512FC /* CommentsTVC.swift */; };
+		5F9060442A9C7AAC00B512FC /* CommentsTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5F9060422A9C7AAC00B512FC /* CommentsTVC.xib */; };
+		5F9060472A9C887C00B512FC /* ReplyCommentsTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F9060452A9C887C00B512FC /* ReplyCommentsTVC.swift */; };
+		5F9060482A9C887C00B512FC /* ReplyCommentsTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5F9060462A9C887C00B512FC /* ReplyCommentsTVC.xib */; };
 		5F90BCFE2A97434F00E395C0 /* EditDeletePopUpActivitiesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F90BCFC2A97434F00E395C0 /* EditDeletePopUpActivitiesVC.swift */; };
 		5F90BCFF2A97434F00E395C0 /* EditDeletePopUpActivitiesVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5F90BCFD2A97434F00E395C0 /* EditDeletePopUpActivitiesVC.xib */; };
 		5F90BD042A976CA200E395C0 /* CommentsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F90BD022A976CA200E395C0 /* CommentsVC.swift */; };
@@ -62,16 +72,21 @@
 		5F90C2562A94705B0004F57F /* SearchUsersVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5F90C2542A94705B0004F57F /* SearchUsersVC.xib */; };
 		5F90C25D2A9476C70004F57F /* UserTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F90C25B2A9476C70004F57F /* UserTVC.swift */; };
 		5F90C25E2A9476C70004F57F /* UserTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5F90C25C2A9476C70004F57F /* UserTVC.xib */; };
+		5F921CD92AA0C6D00003658D /* AddNewActivityVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F921CD72AA0C6D00003658D /* AddNewActivityVC.swift */; };
+		5F921CDA2AA0C6D00003658D /* AddNewActivityVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5F921CD82AA0C6D00003658D /* AddNewActivityVC.xib */; };
 		5F9262D62A94D85300EE1B97 /* NotificationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F9262D42A94D85300EE1B97 /* NotificationVC.swift */; };
 		5F9262D72A94D85300EE1B97 /* NotificationVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5F9262D52A94D85300EE1B97 /* NotificationVC.xib */; };
 		5F9262DA2A94DA0100EE1B97 /* NotifyTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F9262D82A94DA0100EE1B97 /* NotifyTVCell.swift */; };
 		5F9262DB2A94DA0100EE1B97 /* NotifyTVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5F9262D92A94DA0100EE1B97 /* NotifyTVCell.xib */; };
+		5F9557622AA20F9C001074A1 /* AddNewActivityCVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F9557602AA20F9C001074A1 /* AddNewActivityCVCell.swift */; };
+		5F9557632AA20F9C001074A1 /* AddNewActivityCVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5F9557612AA20F9C001074A1 /* AddNewActivityCVCell.xib */; };
 		5FACA9AB2A8A1A0300A477EC /* CompleteTripCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FACA9A92A8A1A0300A477EC /* CompleteTripCell.swift */; };
 		5FACA9AC2A8A1A0300A477EC /* CompleteTripCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5FACA9AA2A8A1A0300A477EC /* CompleteTripCell.xib */; };
 		5FB35EE22A93713A00FD1971 /* DraftedActivitiesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FB35EE02A93713A00FD1971 /* DraftedActivitiesVC.swift */; };
 		5FB35EE32A93713A00FD1971 /* DraftedActivitiesVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5FB35EE12A93713A00FD1971 /* DraftedActivitiesVC.xib */; };
 		5FBDA9EE2A97233600ABB93F /* ActivitiesListTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FBDA9EC2A97233600ABB93F /* ActivitiesListTVC.swift */; };
 		5FBDA9EF2A97233600ABB93F /* ActivitiesListTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5FBDA9ED2A97233600ABB93F /* ActivitiesListTVC.xib */; };
+		5FC34EF22AA5B1FB008FD01F /* AsyncAlgorithms in Frameworks */ = {isa = PBXBuildFile; productRef = 5FC34EF12AA5B1FB008FD01F /* AsyncAlgorithms */; };
 		5FC9E6602A8E389700CCCC83 /* ChatMessagesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FC9E65E2A8E389700CCCC83 /* ChatMessagesVC.swift */; };
 		5FC9E6612A8E389700CCCC83 /* ChatMessagesVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5FC9E65F2A8E389700CCCC83 /* ChatMessagesVC.xib */; };
 		5FC9E6642A8E396400CCCC83 /* LeftTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FC9E6622A8E396400CCCC83 /* LeftTVCell.swift */; };
@@ -212,6 +227,10 @@
 		5F2F0A272A839B8F0088170F /* HomeVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeVC.xib; sourceTree = "<group>"; };
 		5F427BE02A95E89A00F18D9B /* FilterVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterVC.swift; sourceTree = "<group>"; };
 		5F427BE12A95E89A00F18D9B /* FilterVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FilterVC.xib; sourceTree = "<group>"; };
+		5F75BE072AA09C34002B6DA3 /* AddTripActivityOverlayVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTripActivityOverlayVC.swift; sourceTree = "<group>"; };
+		5F75BE082AA09C34002B6DA3 /* AddTripActivityOverlayVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddTripActivityOverlayVC.xib; sourceTree = "<group>"; };
+		5F75BE0B2AA09EC4002B6DA3 /* TripActivityOverlayCVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripActivityOverlayCVCell.swift; sourceTree = "<group>"; };
+		5F75BE0C2AA09EC4002B6DA3 /* TripActivityOverlayCVCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TripActivityOverlayCVCell.xib; sourceTree = "<group>"; };
 		5F7FCCCE2A8257BC00010FBE /* TakeMyTrip.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TakeMyTrip.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5F7FCCD12A8257BC00010FBE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5F7FCCD32A8257BC00010FBE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -247,6 +266,12 @@
 		5F8EF1332A836BF0008BE6E6 /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
 		5F8EF1372A837480008BE6E6 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		5F8EF1382A837480008BE6E6 /* SignUpViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SignUpViewController.xib; sourceTree = "<group>"; };
+		5F8F735C2A9CD5A2009D244A /* ReportVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportVC.swift; sourceTree = "<group>"; };
+		5F8F735D2A9CD5A2009D244A /* ReportVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ReportVC.xib; sourceTree = "<group>"; };
+		5F9060412A9C7AAC00B512FC /* CommentsTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentsTVC.swift; sourceTree = "<group>"; };
+		5F9060422A9C7AAC00B512FC /* CommentsTVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CommentsTVC.xib; sourceTree = "<group>"; };
+		5F9060452A9C887C00B512FC /* ReplyCommentsTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReplyCommentsTVC.swift; sourceTree = "<group>"; };
+		5F9060462A9C887C00B512FC /* ReplyCommentsTVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ReplyCommentsTVC.xib; sourceTree = "<group>"; };
 		5F90BCFC2A97434F00E395C0 /* EditDeletePopUpActivitiesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditDeletePopUpActivitiesVC.swift; sourceTree = "<group>"; };
 		5F90BCFD2A97434F00E395C0 /* EditDeletePopUpActivitiesVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EditDeletePopUpActivitiesVC.xib; sourceTree = "<group>"; };
 		5F90BD022A976CA200E395C0 /* CommentsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentsVC.swift; sourceTree = "<group>"; };
@@ -255,10 +280,14 @@
 		5F90C2542A94705B0004F57F /* SearchUsersVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchUsersVC.xib; sourceTree = "<group>"; };
 		5F90C25B2A9476C70004F57F /* UserTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserTVC.swift; sourceTree = "<group>"; };
 		5F90C25C2A9476C70004F57F /* UserTVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserTVC.xib; sourceTree = "<group>"; };
+		5F921CD72AA0C6D00003658D /* AddNewActivityVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewActivityVC.swift; sourceTree = "<group>"; };
+		5F921CD82AA0C6D00003658D /* AddNewActivityVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddNewActivityVC.xib; sourceTree = "<group>"; };
 		5F9262D42A94D85300EE1B97 /* NotificationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationVC.swift; sourceTree = "<group>"; };
 		5F9262D52A94D85300EE1B97 /* NotificationVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NotificationVC.xib; sourceTree = "<group>"; };
 		5F9262D82A94DA0100EE1B97 /* NotifyTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotifyTVCell.swift; sourceTree = "<group>"; };
 		5F9262D92A94DA0100EE1B97 /* NotifyTVCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NotifyTVCell.xib; sourceTree = "<group>"; };
+		5F9557602AA20F9C001074A1 /* AddNewActivityCVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewActivityCVCell.swift; sourceTree = "<group>"; };
+		5F9557612AA20F9C001074A1 /* AddNewActivityCVCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddNewActivityCVCell.xib; sourceTree = "<group>"; };
 		5FACA9A92A8A1A0300A477EC /* CompleteTripCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompleteTripCell.swift; sourceTree = "<group>"; };
 		5FACA9AA2A8A1A0300A477EC /* CompleteTripCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CompleteTripCell.xib; sourceTree = "<group>"; };
 		5FB35EE02A93713A00FD1971 /* DraftedActivitiesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DraftedActivitiesVC.swift; sourceTree = "<group>"; };
@@ -389,6 +418,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1B65BF6369D30D4DCDDCB9DC /* Pods_TakeMyTrip.framework in Frameworks */,
+				5FC34EF22AA5B1FB008FD01F /* AsyncAlgorithms in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -468,6 +498,25 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		5F75BE052AA09BED002B6DA3 /* AddTripActivity */ = {
+			isa = PBXGroup;
+			children = (
+				5F75BE062AA09C03002B6DA3 /* View */,
+			);
+			path = AddTripActivity;
+			sourceTree = "<group>";
+		};
+		5F75BE062AA09C03002B6DA3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				5F75BE072AA09C34002B6DA3 /* AddTripActivityOverlayVC.swift */,
+				5F75BE082AA09C34002B6DA3 /* AddTripActivityOverlayVC.xib */,
+				5F75BE0B2AA09EC4002B6DA3 /* TripActivityOverlayCVCell.swift */,
+				5F75BE0C2AA09EC4002B6DA3 /* TripActivityOverlayCVCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		5F7FCCC52A8257BC00010FBE = {
 			isa = PBXGroup;
 			children = (
@@ -538,6 +587,9 @@
 		5F7FCD1A2A82796C00010FBE /* OnBoardingScreens */ = {
 			isa = PBXGroup;
 			children = (
+				5F921CD52AA0C5AD0003658D /* AddNewActivity */,
+				5F75BE052AA09BED002B6DA3 /* AddTripActivity */,
+				5F8F735A2A9CD566009D244A /* Report */,
 				5F90BD002A976B7B00E395C0 /* CommentsVC */,
 				5F90BCF82A9741BB00E395C0 /* EditDeleteActivity */,
 				5F842DC62A963904007A7ECB /* AddActivities */,
@@ -673,6 +725,23 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		5F8F735A2A9CD566009D244A /* Report */ = {
+			isa = PBXGroup;
+			children = (
+				5F8F735B2A9CD576009D244A /* View */,
+			);
+			path = Report;
+			sourceTree = "<group>";
+		};
+		5F8F735B2A9CD576009D244A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				5F8F735C2A9CD5A2009D244A /* ReportVC.swift */,
+				5F8F735D2A9CD5A2009D244A /* ReportVC.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		5F90BCF82A9741BB00E395C0 /* EditDeleteActivity */ = {
 			isa = PBXGroup;
 			children = (
@@ -703,6 +772,10 @@
 			children = (
 				5F90BD022A976CA200E395C0 /* CommentsVC.swift */,
 				5F90BD032A976CA200E395C0 /* CommentsVC.xib */,
+				5F9060412A9C7AAC00B512FC /* CommentsTVC.swift */,
+				5F9060422A9C7AAC00B512FC /* CommentsTVC.xib */,
+				5F9060452A9C887C00B512FC /* ReplyCommentsTVC.swift */,
+				5F9060462A9C887C00B512FC /* ReplyCommentsTVC.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -722,6 +795,25 @@
 				5F90C2542A94705B0004F57F /* SearchUsersVC.xib */,
 				5F90C25B2A9476C70004F57F /* UserTVC.swift */,
 				5F90C25C2A9476C70004F57F /* UserTVC.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		5F921CD52AA0C5AD0003658D /* AddNewActivity */ = {
+			isa = PBXGroup;
+			children = (
+				5F921CD62AA0C6AC0003658D /* View */,
+			);
+			path = AddNewActivity;
+			sourceTree = "<group>";
+		};
+		5F921CD62AA0C6AC0003658D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				5F921CD72AA0C6D00003658D /* AddNewActivityVC.swift */,
+				5F921CD82AA0C6D00003658D /* AddNewActivityVC.xib */,
+				5F9557602AA20F9C001074A1 /* AddNewActivityCVCell.swift */,
+				5F9557612AA20F9C001074A1 /* AddNewActivityCVCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -1133,6 +1225,9 @@
 			dependencies = (
 			);
 			name = TakeMyTrip;
+			packageProductDependencies = (
+				5FC34EF12AA5B1FB008FD01F /* AsyncAlgorithms */,
+			);
 			productName = TakeMyTrip;
 			productReference = 5F7FCCCE2A8257BC00010FBE /* TakeMyTrip.app */;
 			productType = "com.apple.product-type.application";
@@ -1208,6 +1303,9 @@
 				Base,
 			);
 			mainGroup = 5F7FCCC52A8257BC00010FBE;
+			packageReferences = (
+				5FC34EF02AA5B1FB008FD01F /* XCRemoteSwiftPackageReference "swift-async-algorithms" */,
+			);
 			productRefGroup = 5F7FCCCF2A8257BC00010FBE /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -1225,6 +1323,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B3CAD3322A84C35300C2FD09 /* cancel_notes@2x.png in Resources */,
+				5F921CDA2AA0C6D00003658D /* AddNewActivityVC.xib in Resources */,
 				5F90C2562A94705B0004F57F /* SearchUsersVC.xib in Resources */,
 				5F8A08932A8F623B001623CE /* FollowingVC.xib in Resources */,
 				5F7FCCDE2A8257BD00010FBE /* LaunchScreen.storyboard in Resources */,
@@ -1237,10 +1336,12 @@
 				5F8CE8DE2A8A59EC0000C1DD /* CreateTripViewController.xib in Resources */,
 				B3CAD3102A84C35300C2FD09 /* CustomPickerController.xib in Resources */,
 				5F90C25E2A9476C70004F57F /* UserTVC.xib in Resources */,
+				5F9060442A9C7AAC00B512FC /* CommentsTVC.xib in Resources */,
 				5F427BE32A95E89A00F18D9B /* FilterVC.xib in Resources */,
 				5FB35EE32A93713A00FD1971 /* DraftedActivitiesVC.xib in Resources */,
 				5F7FCCDB2A8257BD00010FBE /* Assets.xcassets in Resources */,
 				5F7FCCD92A8257BC00010FBE /* Main.storyboard in Resources */,
+				5F8F735F2A9CD5A2009D244A /* ReportVC.xib in Resources */,
 				B3CAD3242A84C35300C2FD09 /* animation_lkocbuj0.json in Resources */,
 				B30923402A90EDE10080CB5E /* BlockedUserVC.xib in Resources */,
 				B3CAD3252A84C35300C2FD09 /* CustomPicker.zip in Resources */,
@@ -1256,11 +1357,14 @@
 				B3FFE9822A90C5260042E7F5 /* SettingsVC.xib in Resources */,
 				5F7FCD032A82595A00010FBE /* Poppins-Bold.ttf in Resources */,
 				5FC9E6612A8E389700CCCC83 /* ChatMessagesVC.xib in Resources */,
+				5F75BE0A2AA09C34002B6DA3 /* AddTripActivityOverlayVC.xib in Resources */,
 				5FC9E6652A8E396400CCCC83 /* LeftTVCell.xib in Resources */,
 				5F9262D72A94D85300EE1B97 /* NotificationVC.xib in Resources */,
 				B3CAD3232A84C35300C2FD09 /* animation_lkqeazve.json in Resources */,
 				B3CAD3332A84C35300C2FD09 /* cancel_notes@3x.png in Resources */,
+				5F75BE0E2AA09EC4002B6DA3 /* TripActivityOverlayCVCell.xib in Resources */,
 				B32145682A83BC3500E05452 /* ChatListVC.xib in Resources */,
+				5F9557632AA20F9C001074A1 /* AddNewActivityCVCell.xib in Resources */,
 				B3CAD3152A84C35300C2FD09 /* VideoTrimmerVC.xib in Resources */,
 				5F7FCD072A82596E00010FBE /* Poppins-Medium.ttf in Resources */,
 				5F8EF1352A836BF0008BE6E6 /* LoginViewController.xib in Resources */,
@@ -1270,6 +1374,7 @@
 				B3FFE9862A90C5EE0042E7F5 /* SettingsTVCell.xib in Resources */,
 				B3CAD2622A849EEC00C2FD09 /* HomeFirstCVCell.xib in Resources */,
 				5F8A08812A8F41A5001623CE /* FollowerListVC.xib in Resources */,
+				5F9060482A9C887C00B512FC /* ReplyCommentsTVC.xib in Resources */,
 				5FC9E6692A8E398800CCCC83 /* RightTVCell.xib in Resources */,
 				5F89513D2A95FC1000F427BB /* EditProfileVC.xib in Resources */,
 				5F2F0A292A839B8F0088170F /* HomeVC.xib in Resources */,
@@ -1413,9 +1518,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				5F8A088A2A8F61C5001623CE /* FollowingtListTVCell.swift in Sources */,
+				5F9060472A9C887C00B512FC /* ReplyCommentsTVC.swift in Sources */,
 				5F90BCFE2A97434F00E395C0 /* EditDeletePopUpActivitiesVC.swift in Sources */,
 				B3CAD3542A84C35400C2FD09 /* UITextField+Custom.swift in Sources */,
 				B3CAD34A2A84C35300C2FD09 /* NSLayoutContraint+Custom.swift in Sources */,
+				5F75BE092AA09C34002B6DA3 /* AddTripActivityOverlayVC.swift in Sources */,
 				B3CAD30D2A84C35300C2FD09 /* CustomDashedView.swift in Sources */,
 				B3FFE9852A90C5EE0042E7F5 /* SettingsTVCell.swift in Sources */,
 				B3CAD31E2A84C35300C2FD09 /* VideoTrimmerVC.swift in Sources */,
@@ -1423,10 +1530,13 @@
 				5FACA9AB2A8A1A0300A477EC /* CompleteTripCell.swift in Sources */,
 				5FBDA9EE2A97233600ABB93F /* ActivitiesListTVC.swift in Sources */,
 				B3CAD3192A84C35300C2FD09 /* HandlerView.swift in Sources */,
+				5F75BE0D2AA09EC4002B6DA3 /* TripActivityOverlayCVCell.swift in Sources */,
 				B3CAD34B2A84C35300C2FD09 /* Date+Custom.swift in Sources */,
 				B3CAD2652A849F8300C2FD09 /* HomeTVCell.swift in Sources */,
+				5F8F735E2A9CD5A2009D244A /* ReportVC.swift in Sources */,
 				B3CAD31F2A84C35300C2FD09 /* GridViewCell.swift in Sources */,
 				B3CAD34C2A84C35300C2FD09 /* UICollectionView+Custom.swift in Sources */,
+				5F9060432A9C7AAC00B512FC /* CommentsTVC.swift in Sources */,
 				B3CAD3402A84C35300C2FD09 /* HttpManager.swift in Sources */,
 				B3CAD3572A84C35400C2FD09 /* UIStoryboard+Custom.swift in Sources */,
 				B3CAD3202A84C35300C2FD09 /* FeedGalleryCollectionView.swift in Sources */,
@@ -1437,6 +1547,7 @@
 				B3CAD3412A84C35300C2FD09 /* GetImageFromPicker.swift in Sources */,
 				B3CAD3592A84C35400C2FD09 /* UITableView+Custom.swift in Sources */,
 				B3CAD33E2A84C35300C2FD09 /* API.swift in Sources */,
+				5F9557622AA20F9C001074A1 /* AddNewActivityCVCell.swift in Sources */,
 				B3CAD32B2A84C35300C2FD09 /* SearchGooglePlaces.swift in Sources */,
 				B3FFE9812A90C5260042E7F5 /* SettingsVC.swift in Sources */,
 				5F2F0A282A839B8F0088170F /* HomeVC.swift in Sources */,
@@ -1518,6 +1629,7 @@
 				B3CAD3452A84C35300C2FD09 /* DataDecoder.swift in Sources */,
 				B3CAD3282A84C35300C2FD09 /* Constants.swift in Sources */,
 				B3CAD32D2A84C35300C2FD09 /* IAPHelper.swift in Sources */,
+				5F921CD92AA0C6D00003658D /* AddNewActivityVC.swift in Sources */,
 				B3CAD32F2A84C35300C2FD09 /* GoogleManager.swift in Sources */,
 				B3CAD3432A84C35300C2FD09 /* PresentableController.swift in Sources */,
 				5F8EF1392A837480008BE6E6 /* SignUpViewController.swift in Sources */,
@@ -1626,7 +1738,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -1680,7 +1792,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -1706,7 +1818,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1739,7 +1851,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1876,6 +1988,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		5FC34EF02AA5B1FB008FD01F /* XCRemoteSwiftPackageReference "swift-async-algorithms" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apple/swift-async-algorithms.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.1.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		5FC34EF12AA5B1FB008FD01F /* AsyncAlgorithms */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5FC34EF02AA5B1FB008FD01F /* XCRemoteSwiftPackageReference "swift-async-algorithms" */;
+			productName = AsyncAlgorithms;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 5F7FCCC62A8257BC00010FBE /* Project object */;
 }
