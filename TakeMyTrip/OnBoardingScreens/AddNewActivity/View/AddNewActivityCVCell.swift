@@ -10,9 +10,9 @@ import UIKit
 class AddNewActivityCVCell: UICollectionViewCell {
     
     @IBOutlet weak var imgAdd: UIImageView!
-    @IBOutlet weak var btnDelete: UIButton! // Add a delete button outlet
+    @IBOutlet weak var btnDelete: UIButton!
     
-    var deleteButtonAction: (() -> Void)? // A closure to handle delete button action
+    var deleteButtonAction: (() -> Void)?
     
     override func awakeFromNib() {
         super.awakeFromNib()

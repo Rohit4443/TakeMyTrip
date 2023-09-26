@@ -51,5 +51,11 @@ extension SearchUsersVC: UITableViewDelegate,UITableViewDataSource{
         return 80
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let vc = ProfileVC()
+        vc.comefrom = "OtherProfile"
+        self.pushViewController(vc, true)
+    }
+    
 }
 

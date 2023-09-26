@@ -17,11 +17,11 @@
                 <rect key="frame" x="0.0" y="0.0" width="320" height="512"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="RTc-EY-oc0">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="512"/>
+                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="RTc-EY-oc0">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="575"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstAttribute="height" constant="512" id="KeR-88-8NQ"/>
+                            <constraint firstAttribute="height" constant="575" id="FiZ-dk-ole"/>
                         </constraints>
                         <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="xLQ-hc-9Ta">
                             <size key="itemSize" width="128" height="128"/>
@@ -35,17 +35,19 @@
                         </connections>
                     </collectionView>
                     <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="4" translatesAutoresizingMaskIntoConstraints="NO" id="bYX-Wq-jgx">
-                        <rect key="frame" x="92.666666666666671" y="476" width="134.66666666666663" height="26"/>
+                        <rect key="frame" x="93" y="481" width="134" height="26"/>
                         <color key="currentPageIndicatorTintColor" red="0.93725490196078431" green="0.3529411764705882" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </pageControl>
                 </subviews>
                 <constraints>
+                    <constraint firstItem="bYX-Wq-jgx" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="93" id="2hv-cg-5KN"/>
                     <constraint firstItem="RTc-EY-oc0" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="82y-dN-Pdd"/>
-                    <constraint firstItem="bYX-Wq-jgx" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="Blj-MJ-jjz"/>
-                    <constraint firstAttribute="bottom" secondItem="RTc-EY-oc0" secondAttribute="bottom" id="H0c-vV-chc"/>
+                    <constraint firstAttribute="bottom" secondItem="RTc-EY-oc0" secondAttribute="bottom" id="RKI-fd-kRu"/>
+                    <constraint firstItem="bYX-Wq-jgx" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="481" id="Yll-do-SZD"/>
                     <constraint firstItem="RTc-EY-oc0" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="fEy-ge-mEN"/>
+                    <constraint firstAttribute="bottom" secondItem="bYX-Wq-jgx" secondAttribute="bottom" constant="5" id="hUk-MT-fHy"/>
+                    <constraint firstItem="bYX-Wq-jgx" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="pO3-xu-jOo"/>
                     <constraint firstAttribute="trailing" secondItem="RTc-EY-oc0" secondAttribute="trailing" id="sOb-sm-PcC"/>
-                    <constraint firstAttribute="bottom" secondItem="bYX-Wq-jgx" secondAttribute="bottom" constant="10" id="siE-ku-HIS"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
@@ -53,7 +55,7 @@
                 <outlet property="collSecond" destination="RTc-EY-oc0" id="w4Z-4a-zdy"/>
                 <outlet property="pageControl" destination="bYX-Wq-jgx" id="hIB-aK-Buo"/>
             </connections>
-            <point key="canvasLocation" x="-94.400000000000006" y="-90.854572713643179"/>
+            <point key="canvasLocation" x="-189" y="-54"/>
         </tableViewCell>
     </objects>
 </document>

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -28,16 +28,15 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Jbq-hF-mvH">
-                    <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                     <subviews>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uIf-tq-7V2">
                             <rect key="frame" x="30" y="0.0" width="345" height="80"/>
                             <subviews>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Ex-iF-BbE">
-                                    <rect key="frame" x="0.0" y="32.5" width="36.5" height="15"/>
+                                    <rect key="frame" x="0.0" y="32.5" width="40" height="15"/>
                                     <constraints>
                                         <constraint firstAttribute="height" constant="15" id="cIc-yA-apB"/>
-                                        <constraint firstAttribute="width" constant="36.329999999999998" id="kpB-fl-bu2"/>
                                     </constraints>
                                     <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                     <state key="normal" image="ic_backbtn"/>
@@ -46,7 +45,7 @@
                                     </connections>
                                 </button>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Invite Friends" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f8c-5c-5Qk">
-                                    <rect key="frame" x="51.5" y="24" width="140" height="32"/>
+                                    <rect key="frame" x="55" y="24" width="140" height="32"/>
                                     <constraints>
                                         <constraint firstAttribute="width" constant="140" id="99H-z0-voy"/>
                                         <constraint firstAttribute="height" constant="32" id="peb-Gq-eEs"/>
@@ -108,17 +107,14 @@
                             <nil key="textColor"/>
                             <nil key="highlightedColor"/>
                         </label>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please share this link with you friends" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xkk-VT-kGq">
-                            <rect key="frame" x="62" y="153" width="251" height="29"/>
-                            <constraints>
-                                <constraint firstAttribute="height" constant="29" id="i9S-iw-Pjg"/>
-                            </constraints>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please share this link with your friends" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xkk-VT-kGq">
+                            <rect key="frame" x="46.5" y="153" width="282.5" height="21"/>
                             <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="15"/>
                             <nil key="textColor"/>
                             <nil key="highlightedColor"/>
                         </label>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fEr-cv-Chb" customClass="CustomDashedView" customModule="TakeMyTrip" customModuleProvider="target">
-                            <rect key="frame" x="41" y="202" width="293" height="53"/>
+                            <rect key="frame" x="41" y="209" width="293" height="53"/>
                             <subviews>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="http://Takemytrip.com/" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KOM-Dw-iKG">
                                     <rect key="frame" x="61" y="12" width="171" height="29"/>
@@ -166,7 +162,7 @@
                             </userDefinedRuntimeAttributes>
                         </view>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Share with Social Media :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ko6-IV-oxy">
-                            <rect key="frame" x="41" y="275" width="185" height="29"/>
+                            <rect key="frame" x="41" y="282" width="185" height="29"/>
                             <constraints>
                                 <constraint firstAttribute="width" constant="185" id="jqD-kA-1Ba"/>
                                 <constraint firstAttribute="height" constant="29" id="rMG-g7-F3T"/>
@@ -175,79 +171,61 @@
                             <nil key="textColor"/>
                             <nil key="highlightedColor"/>
                         </label>
-                        <stackView opaque="NO" contentMode="scaleToFill" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="nJX-7i-3e7">
-                            <rect key="frame" x="25" y="319" width="325" height="61"/>
-                            <subviews>
-                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gCK-hD-Qd1">
-                                    <rect key="frame" x="0.0" y="0.0" width="45" height="61"/>
-                                    <constraints>
-                                        <constraint firstAttribute="height" constant="61" id="Xhl-Hd-Pwc"/>
-                                        <constraint firstAttribute="width" constant="45" id="s9j-0y-8gL"/>
-                                    </constraints>
-                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                    <state key="normal" image="ic_whatsapp"/>
-                                </button>
-                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jqm-W9-LbE">
-                                    <rect key="frame" x="70" y="0.0" width="45" height="61"/>
-                                    <constraints>
-                                        <constraint firstAttribute="width" constant="45" id="Ljc-Ex-M9b"/>
-                                        <constraint firstAttribute="height" constant="61" id="sir-3h-1yJ"/>
-                                    </constraints>
-                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                    <state key="normal" image="ic_instagram"/>
-                                </button>
-                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wlT-WN-GAO">
-                                    <rect key="frame" x="140" y="0.0" width="45" height="61"/>
-                                    <constraints>
-                                        <constraint firstAttribute="height" constant="61" id="Fxc-qf-5PG"/>
-                                        <constraint firstAttribute="width" constant="45" id="byd-Q5-gkY"/>
-                                    </constraints>
-                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                    <state key="normal" image="ic_facebook"/>
-                                </button>
-                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8WL-a1-T3B">
-                                    <rect key="frame" x="210" y="0.0" width="45" height="61"/>
-                                    <constraints>
-                                        <constraint firstAttribute="width" constant="45" id="RrT-Ya-kmA"/>
-                                        <constraint firstAttribute="height" constant="61" id="UQ9-SC-0UB"/>
-                                    </constraints>
-                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                    <state key="normal" image="ic_twitter"/>
-                                </button>
-                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9bG-vX-qPw">
-                                    <rect key="frame" x="280" y="0.0" width="45" height="61"/>
-                                    <constraints>
-                                        <constraint firstAttribute="height" constant="61" id="OkU-0i-B5O"/>
-                                        <constraint firstAttribute="width" constant="45" id="n0U-zS-oeW"/>
-                                    </constraints>
-                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                    <state key="normal" image="ic_gmail"/>
-                                </button>
-                            </subviews>
-                        </stackView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gCK-hD-Qd1">
+                            <rect key="frame" x="41" y="326" width="44" height="56"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <state key="normal" image="ic_whatsapp"/>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wlT-WN-GAO">
+                            <rect key="frame" x="174" y="323.5" width="45" height="61"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <state key="normal" image="ic_facebook"/>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8WL-a1-T3B">
+                            <rect key="frame" x="241" y="323.5" width="45" height="61"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <state key="normal" image="ic_twitter"/>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9bG-vX-qPw">
+                            <rect key="frame" x="308" y="323.5" width="45" height="61"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <state key="normal" image="ic_gmail"/>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jqm-W9-LbE">
+                            <rect key="frame" x="107" y="323.5" width="45" height="61"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <state key="normal" image="ic_instagram"/>
+                        </button>
                     </subviews>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     <constraints>
+                        <constraint firstItem="gCK-hD-Qd1" firstAttribute="top" secondItem="ko6-IV-oxy" secondAttribute="bottom" constant="15" id="6ML-CS-icG"/>
                         <constraint firstItem="fEr-cv-Chb" firstAttribute="leading" secondItem="Jbq-hF-mvH" secondAttribute="leading" constant="41" id="7x1-tX-69U"/>
-                        <constraint firstItem="nJX-7i-3e7" firstAttribute="leading" secondItem="Jbq-hF-mvH" secondAttribute="leading" constant="25" id="9gX-qG-7dN"/>
+                        <constraint firstItem="9bG-vX-qPw" firstAttribute="leading" secondItem="8WL-a1-T3B" secondAttribute="trailing" constant="22" id="BgR-kR-4FA"/>
                         <constraint firstItem="Xkk-VT-kGq" firstAttribute="centerX" secondItem="Jbq-hF-mvH" secondAttribute="centerX" id="CH3-hB-fIb"/>
-                        <constraint firstAttribute="trailing" secondItem="nJX-7i-3e7" secondAttribute="trailing" constant="25" id="Eah-Bx-Q2i"/>
+                        <constraint firstItem="Jqm-W9-LbE" firstAttribute="leading" secondItem="gCK-hD-Qd1" secondAttribute="trailing" constant="22" id="FwB-ot-V5S"/>
+                        <constraint firstItem="wlT-WN-GAO" firstAttribute="leading" secondItem="Jqm-W9-LbE" secondAttribute="trailing" constant="22" id="G2f-i6-UaI"/>
                         <constraint firstItem="ko6-IV-oxy" firstAttribute="top" secondItem="fEr-cv-Chb" secondAttribute="bottom" constant="20" id="HDb-D8-H9H"/>
+                        <constraint firstItem="8WL-a1-T3B" firstAttribute="centerY" secondItem="wlT-WN-GAO" secondAttribute="centerY" id="P2r-k3-PB0"/>
+                        <constraint firstItem="Jqm-W9-LbE" firstAttribute="centerY" secondItem="gCK-hD-Qd1" secondAttribute="centerY" id="Qb7-4I-TqS"/>
                         <constraint firstItem="uIf-tq-7V2" firstAttribute="top" secondItem="Jbq-hF-mvH" secondAttribute="top" id="Vn8-kA-Ov3"/>
-                        <constraint firstItem="nJX-7i-3e7" firstAttribute="top" secondItem="ko6-IV-oxy" secondAttribute="bottom" constant="15" id="Y6e-vw-X09"/>
+                        <constraint firstItem="9bG-vX-qPw" firstAttribute="centerY" secondItem="8WL-a1-T3B" secondAttribute="centerY" id="aVe-ry-SBc"/>
                         <constraint firstAttribute="trailing" secondItem="fEr-cv-Chb" secondAttribute="trailing" constant="41" id="bHH-Uc-eqa"/>
                         <constraint firstAttribute="trailing" secondItem="uIf-tq-7V2" secondAttribute="trailing" id="cI2-tr-4cJ"/>
                         <constraint firstItem="ko6-IV-oxy" firstAttribute="leading" secondItem="fEr-cv-Chb" secondAttribute="leading" id="dGB-7g-wne"/>
                         <constraint firstItem="csA-Ys-xOM" firstAttribute="top" secondItem="uIf-tq-7V2" secondAttribute="bottom" constant="20" id="dSA-CL-feh"/>
                         <constraint firstItem="csA-Ys-xOM" firstAttribute="centerX" secondItem="Jbq-hF-mvH" secondAttribute="centerX" id="iEM-gt-bE3"/>
                         <constraint firstItem="uIf-tq-7V2" firstAttribute="leading" secondItem="Jbq-hF-mvH" secondAttribute="leading" constant="30" id="m7x-Fa-dKz"/>
+                        <constraint firstItem="wlT-WN-GAO" firstAttribute="centerY" secondItem="Jqm-W9-LbE" secondAttribute="centerY" id="oHM-LX-y1O"/>
+                        <constraint firstItem="8WL-a1-T3B" firstAttribute="leading" secondItem="wlT-WN-GAO" secondAttribute="trailing" constant="22" id="oMS-Fu-C2l"/>
+                        <constraint firstItem="gCK-hD-Qd1" firstAttribute="leading" secondItem="ko6-IV-oxy" secondAttribute="leading" id="pZu-Vs-EY7"/>
                         <constraint firstItem="Xkk-VT-kGq" firstAttribute="top" secondItem="csA-Ys-xOM" secondAttribute="bottom" constant="15" id="vPe-Sr-LMq"/>
-                        <constraint firstItem="fEr-cv-Chb" firstAttribute="top" secondItem="Xkk-VT-kGq" secondAttribute="bottom" constant="20" id="xXV-OJ-Vhl"/>
+                        <constraint firstItem="fEr-cv-Chb" firstAttribute="top" secondItem="Xkk-VT-kGq" secondAttribute="bottom" constant="35" id="xXV-OJ-Vhl"/>
                     </constraints>
                 </view>
             </subviews>
@@ -259,7 +237,7 @@
                 <constraint firstItem="Jbq-hF-mvH" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="MbZ-uw-Hq5"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Jbq-hF-mvH" secondAttribute="trailing" id="WkA-5d-fND"/>
             </constraints>
-            <point key="canvasLocation" x="302" y="72"/>
+            <point key="canvasLocation" x="301.60000000000002" y="71.514242878560722"/>
         </view>
     </objects>
     <resources>

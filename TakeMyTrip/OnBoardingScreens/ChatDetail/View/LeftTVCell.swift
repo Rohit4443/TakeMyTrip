@@ -10,13 +10,23 @@ import UIKit
 class LeftTVCell: UITableViewCell {
     @IBOutlet weak var lblLeftCell: UILabel!
     
-    @IBOutlet weak var vWLeftCell: UIView!
+    @IBOutlet weak var vWBgView: UIView!
     override func awakeFromNib() {
         super.awakeFromNib()
-        self.vWLeftCell.shadowRadius = 4
-        self.vWLeftCell.shadowOpacity = 0.5
-        self.vWLeftCell.shadowOffset = CGSize(width: 0, height: 0)
-        self.vWLeftCell.shadowColor = .gray
+       
+        vWBgView.layer.masksToBounds = false // Ensure it's not clipping content
+        vWBgView.layer.shadowRadius = 4    // Adjust the shadow radius as needed
+        vWBgView.layer.shadowOpacity = 0.1 // Adjust the shadow opacity as needed
+        vWBgView.layer.shadowOffset = .zero
+        vWBgView.layer.shadowColor = UIColor.systemGray.cgColor
+
+        // You can also set a background color for vWBgView for better visibility
+        vWBgView.backgroundColor = .white // or any other color
+
+        // Check for any superview's clipsToBounds property, and set it to false if necessary
+        self.contentView.clipsToBounds = false // assuming vWBgView is in the cell's content view
+
+
     }
     
     override func setSelected(_ selected: Bool, animated: Bool) {

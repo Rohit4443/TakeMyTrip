@@ -18,14 +18,17 @@ class Comment {
     }
 }
 
-class CommentsVC: UIViewController, UITableViewDataSource, UITableViewDelegate, CommentsTVCDelegate {
+class CommentsVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
+    @IBOutlet var viewContentView: UIView!
     @IBOutlet weak var tblCommentsList: UITableView!
+    
+    
     
     var comments: [Comment] = [
         Comment(text: "This is a comment", replies: ["Reply 1", "Reply 2"]),
         Comment(text: "Another comment", replies: []),
-     
+        
     ]
     
     override func viewDidLoad() {
@@ -34,44 +37,44 @@ class CommentsVC: UIViewController, UITableViewDataSource, UITableViewDelegate, 
         tblCommentsList.delegate = self
         tblCommentsList.register(UINib(nibName: "CommentsTVC", bundle: nil), forCellReuseIdentifier: "CommentsTVC")
         tblCommentsList.register(UINib(nibName: "ReplyCommentsTVC", bundle: nil), forCellReuseIdentifier: "ReplyCommentsTVC")
+        
+        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(self.tapgesture))
+                viewContentView.addGestureRecognizer(tapGesture)
     }
     
+    @objc func tapgesture(){
+            dismiss(animated: true)
+        
+    }
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-           // Each comment row will include the original comment and its replies (if expanded)
-           let comment = comments[section]
-           return comment.isExpanded ? comment.replies.count + 1 : 1
-       }
-    
-    
-    
-      func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let comment = comments[indexPath.section]
         
-        if indexPath.row == 0 { // Display the original comment
-            let cell = tableView.dequeueReusableCell(withIdentifier: "CommentsTVC", for: indexPath) as! CommentsTVC
-            cell.delegate = self
-            cell.lblTextComment.text = comment.text
-            return cell
-        } else { // Display reply comments
-            let cell = tableView.dequeueReusableCell(withIdentifier: "ReplyCommentsTVC", for: indexPath) as! ReplyCommentsTVC
-            let replyIndex = indexPath.row - 1 // Subtract 1 to get the correct reply index
-            cell.lblTextReply.text = comment.replies[replyIndex]
-            cell.isHidden = !comment.isExpanded
-            return cell
-        }
+       return 4
     }
     
-    func didTapReplyButton(in cell: CommentsTVC) {
-        guard let indexPath = tblCommentsList.indexPath(for: cell) else {
-            return
+    
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+  
+        let cell = tableView.dequeueReusableCell(withIdentifier: "CommentsTVC", for: indexPath) as! CommentsTVC
+       
+        let cell2 = tableView.dequeueReusableCell(withIdentifier: "ReplyCommentsTVC", for: indexPath) as! ReplyCommentsTVC
+        
+        switch indexPath.row {
+        case 0:
+            cell.vWSeeReply.isHidden = false
+            return cell
+        case 1:
+            return cell2
+        case 2:
+            return cell2
+        case 3:
+            cell.vWSeeReply.isHidden = true
+            return cell
+            
+        default:
+            return UITableViewCell()
         }
         
-        let comment = comments[indexPath.row]
-        comment.isExpanded.toggle()
-        comments[indexPath.row] = comment
-        
-        tblCommentsList.beginUpdates()
-        tblCommentsList.reloadRows(at: [indexPath], with: .automatic)
-        tblCommentsList.endUpdates()
+   
     }
 }

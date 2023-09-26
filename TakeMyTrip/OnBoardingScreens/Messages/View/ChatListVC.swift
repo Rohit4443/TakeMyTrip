@@ -48,6 +48,12 @@ extension ChatListVC: UITableViewDelegate, UITableViewDataSource {
         let cell = tableView.dequeueReusableCell(withIdentifier: "MessageTVCell", for: indexPath)as! MessageTVCell
         cell.lblName.text = arrayName[indexPath.row]
         cell.lblMessage.text = arraymessage[indexPath.row]
+        if indexPath.row == 0 || indexPath.row == 1{
+            cell.lblUnreadMessage.isHidden = false
+        }else{
+            cell.lblUnreadMessage.isHidden = true
+         
+        }
         return cell
         
         
@@ -72,9 +78,9 @@ extension ChatListVC: UITableViewDelegate, UITableViewDataSource {
         }
         
         
-        let deleteIcon = UIImage(named: "ic_delete")
+        let deleteIcon = UIImage(named: "ic_DeleteButton")
         deleteAction.image = deleteIcon
-        deleteAction.backgroundColor = .red
+        deleteAction.backgroundColor = .white
         let configuration = UISwipeActionsConfiguration(actions: [deleteAction])
         configuration.performsFirstActionWithFullSwipe = false //HERE..
         return configuration
@@ -85,7 +91,7 @@ extension ChatListVC: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath)
     {
         print("Cell \(indexPath.row + 1) clicked")
-        let vc = ChatMessagesVC()
+        let vc = OneToOneChatVC()
         vc.hidesBottomBarWhenPushed = true
         self.navigationController?.pushViewController(vc, animated: true)
     }

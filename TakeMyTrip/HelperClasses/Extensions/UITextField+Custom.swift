@@ -147,3 +147,16 @@ extension UITextField{
     }
     
 }
+//extension UITextView {
+//    
+//    
+//    func addPaddingToTextView(){
+//        let paddingView: UIView = UIView.init(frame: CGRect(x: 0, y: 0, width: 10, height: 0))
+//        self.leftView = paddingView;
+//        self.leftViewMode = .always;
+//        self.rightView = paddingView;
+//        self.rightViewMode = .always
+//        
+//    }
+//
+//}

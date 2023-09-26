@@ -12,15 +12,14 @@
         <array key="Poppins-Medium.ttf">
             <string>Poppins-Medium</string>
         </array>
-        <array key="Poppins-Regular.ttf">
-            <string>Poppins-Regular</string>
-        </array>
     </customFonts>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MyTripsVC" customModule="TakeMyTrip" customModuleProvider="target">
             <connections>
                 <outlet property="BtnCompleted" destination="7cH-lA-LLP" id="42A-mJ-Vwt"/>
                 <outlet property="BtnPlanned" destination="dsR-cr-vYO" id="VG0-1v-fxM"/>
+                <outlet property="heightConsCompletedLineLbl" destination="nJn-Ua-cti" id="4Ux-NB-Otq"/>
+                <outlet property="heightConsPlannedLineLbl" destination="ACb-CZ-Lvb" id="Wwm-RU-IWi"/>
                 <outlet property="lblCompletedLIne" destination="tUd-wA-gWW" id="Ije-lf-N2v"/>
                 <outlet property="lblPlannedLine" destination="cac-yk-rNd" id="J4Q-l7-61o"/>
                 <outlet property="tblMyTrip" destination="edB-bh-qOP" id="yLC-d1-5Wu"/>
@@ -36,7 +35,7 @@
                     <rect key="frame" x="0.0" y="20" width="375" height="647"/>
                     <subviews>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="My Trips" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gcd-6b-eLb">
-                            <rect key="frame" x="29" y="53" width="104" height="38"/>
+                            <rect key="frame" x="29" y="30" width="104" height="38"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="38" id="X4p-Fg-H2T"/>
                                 <constraint firstAttribute="width" constant="104" id="iYO-Od-pAK"/>
@@ -46,7 +45,7 @@
                             <nil key="highlightedColor"/>
                         </label>
                         <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Zot-es-S5i">
-                            <rect key="frame" x="0.0" y="118" width="376" height="40"/>
+                            <rect key="frame" x="0.0" y="78" width="376" height="40"/>
                             <subviews>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="I5e-Jh-j2f">
                                     <rect key="frame" x="0.0" y="0.0" width="188" height="40"/>
@@ -57,15 +56,15 @@
                                                 <constraint firstAttribute="height" constant="1" id="nJn-Ua-cti"/>
                                             </constraints>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                            <nil key="textColor"/>
+                                            <color key="textColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7cH-lA-LLP">
                                             <rect key="frame" x="0.0" y="3.5" width="188" height="33"/>
-                                            <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="15"/>
+                                            <fontDescription key="fontDescription" name="Poppins-Medium" family="Poppins" pointSize="15"/>
                                             <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                             <state key="normal" title="Completed">
-                                                <color key="titleColor" systemColor="labelColor"/>
+                                                <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="0.74710264900662249" colorSpace="custom" customColorSpace="sRGB"/>
                                             </state>
                                             <connections>
                                                 <action selector="actionCompleted:" destination="-1" eventType="touchUpInside" id="1a7-nf-L9u"/>
@@ -89,19 +88,20 @@
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cac-yk-rNd">
                                             <rect key="frame" x="0.0" y="39" width="188" height="1"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="1" id="ACb-CZ-Lvb"/>
                                             </constraints>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                            <nil key="textColor"/>
+                                            <color key="textColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dsR-cr-vYO" userLabel="PlannedPlanned">
                                             <rect key="frame" x="0.0" y="3.5" width="188" height="33"/>
-                                            <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="15"/>
+                                            <fontDescription key="fontDescription" name="Poppins-Medium" family="Poppins" pointSize="15"/>
                                             <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                             <state key="normal" title="Planned">
-                                                <color key="titleColor" systemColor="labelColor"/>
+                                                <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             </state>
                                             <connections>
                                                 <action selector="actionPlanned:" destination="-1" eventType="touchUpInside" id="Hgi-H0-F0O"/>
@@ -127,7 +127,7 @@
                             </constraints>
                         </stackView>
                         <tableView clipsSubviews="YES" contentMode="scaleAspectFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="edB-bh-qOP">
-                            <rect key="frame" x="20" y="168" width="335" height="479"/>
+                            <rect key="frame" x="20" y="128" width="335" height="519"/>
                             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <color key="separatorColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <connections>
@@ -140,8 +140,8 @@
                     <constraints>
                         <constraint firstAttribute="trailing" secondItem="Zot-es-S5i" secondAttribute="trailing" constant="-1" id="25O-mG-NRS"/>
                         <constraint firstItem="gcd-6b-eLb" firstAttribute="leading" secondItem="Mvc-LH-aCi" secondAttribute="leading" constant="29" id="9CX-BG-176"/>
-                        <constraint firstItem="gcd-6b-eLb" firstAttribute="top" secondItem="Mvc-LH-aCi" secondAttribute="top" constant="53" id="Edy-g2-khy"/>
-                        <constraint firstItem="Zot-es-S5i" firstAttribute="top" secondItem="gcd-6b-eLb" secondAttribute="bottom" constant="27" id="ElR-YA-NC8"/>
+                        <constraint firstItem="gcd-6b-eLb" firstAttribute="top" secondItem="Mvc-LH-aCi" secondAttribute="top" constant="30" id="Edy-g2-khy"/>
+                        <constraint firstItem="Zot-es-S5i" firstAttribute="top" secondItem="gcd-6b-eLb" secondAttribute="bottom" constant="10" id="ElR-YA-NC8"/>
                         <constraint firstItem="edB-bh-qOP" firstAttribute="top" secondItem="Zot-es-S5i" secondAttribute="bottom" constant="10" id="GVA-yf-oUa"/>
                         <constraint firstItem="Zot-es-S5i" firstAttribute="leading" secondItem="Mvc-LH-aCi" secondAttribute="leading" id="HdS-W3-YDP"/>
                         <constraint firstAttribute="trailing" secondItem="edB-bh-qOP" secondAttribute="trailing" constant="20" id="IgZ-hu-l5m"/>
@@ -162,9 +162,6 @@
         </view>
     </objects>
     <resources>
-        <systemColor name="labelColor">
-            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

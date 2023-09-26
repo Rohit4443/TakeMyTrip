@@ -13,9 +13,20 @@ class AddNewActivityVC: UIViewController {
     
     @IBOutlet weak var collActivityAdd: UICollectionView!
     
+    @IBOutlet weak var btnNew: UIButton!
+    @IBOutlet weak var btnExisting: UIButton!
+    @IBOutlet weak var txtFldNameOfActivity: UITextField!
+    @IBOutlet weak var txtFldWhichTypeOfTrip: UITextField!
+    @IBOutlet weak var txtFldLocation: UITextField!
+    @IBOutlet weak var txtViewDescription: UITextView!
+    @IBOutlet weak var txtFldAdditionalInfo: UITextField!
+    @IBOutlet weak var vWBgDescription: UIView!
     var imageArray = [UIImage]()
     
     let maxImageLimit = 10
+    
+    var selectedTextField: UITextField?
+   
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,8 +34,51 @@ class AddNewActivityVC: UIViewController {
         collActivityAdd.dataSource = self
         
         collActivityAdd.register(UINib(nibName: "AddNewActivityCVCell", bundle: nil), forCellWithReuseIdentifier: "AddNewActivityCVCell")
+        self.txtFldNameOfActivity.addPaddingToTextfield()
+        self.txtFldWhichTypeOfTrip.addPaddingToTextfield()
+        self.txtFldLocation.addPaddingToTextfield()
+        self.txtFldAdditionalInfo.addPaddingToTextfield()
+        self.txtFldNameOfActivity.delegate = self
+        txtFldWhichTypeOfTrip.delegate = self
+        txtFldAdditionalInfo.delegate = self
+        txtFldLocation.delegate = self
+        txtViewDescription.delegate = self
+        
+       
     }
+    
+    
+    
+    
+    @IBAction func actionSave(_ sender: UIButton) {
+        let vc = AddTripActivityOverlayVC()
+        self.hidesBottomBarWhenPushed = true
+        self.navigationController?.pushViewController(vc, animated: true)
+       
+        
+    }
+    
+    @IBAction func actionNew(_ sender: UIButton) {
+        sender.isSelected.toggle()
+        btnExisting.isSelected = false
+        
+    }
+    
+    
+    @IBAction func actionExisting(_ sender: UIButton) {
+        sender.isSelected.toggle()
+        btnNew.isSelected = false
+    }
+    
+    @IBAction func actionBack(_ sender: UIButton) {
+        popVC()
+    }
+    
+    
 }
+
+
+
 
 
 extension AddNewActivityVC: PHPickerViewControllerDelegate {
@@ -54,7 +108,7 @@ extension AddNewActivityVC: PHPickerViewControllerDelegate {
 }
 
 
-extension AddNewActivityVC: UICollectionViewDataSource, UICollectionViewDelegate {
+extension AddNewActivityVC: UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         if indexPath.item == imageArray.count && imageArray.count < maxImageLimit {
@@ -77,17 +131,19 @@ extension AddNewActivityVC: UICollectionViewDataSource, UICollectionViewDelegate
         }
         
         if indexPath.item < imageArray.count {
-           
+            cell.imgAdd.contentMode = .scaleAspectFill
             cell.imgAdd.image = imageArray[indexPath.item]
             cell.btnDelete.isHidden = false
             cell.deleteButtonAction = { [weak self] in
                 self?.deleteImage(at: indexPath)
             }
         } else {
-        
+            cell.imgAdd.contentMode = .scaleAspectFit
             cell.imgAdd.image = UIImage(named: "ic_addPhoto")
             cell.btnDelete.isHidden = true
         }
+        
+        
         
         return cell
     }
@@ -109,4 +165,47 @@ extension AddNewActivityVC: UICollectionViewDataSource, UICollectionViewDelegate
             self?.collActivityAdd.reloadData()
         }
     }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        return CGSize(width: 120, height: 130)
+    }
 }
+
+extension AddNewActivityVC : UITextFieldDelegate{
+    
+    func textFieldDidBeginEditing(_ textField: UITextField) {
+        selectedTextField = textField
+        
+        textField.layer.borderColor = UIColor.init(r: 239, g: 90, b: 0, a: 1).cgColor
+        textField.layer.borderWidth = 1
+        
+        if let lastSelected = selectedTextField, lastSelected != textField {
+            textField.layer.borderColor = UIColor.clear.cgColor
+
+           
+        }
+    }
+    
+    func textFieldDidEndEditing(_ textField: UITextField) {
+        textField.layer.borderColor = UIColor.init(r: 195, g: 195, b: 195, a: 1).cgColor
+        textField.layer.borderWidth = 0.4
+    }
+}
+
+
+extension AddNewActivityVC : UITextViewDelegate{
+
+    func textViewDidBeginEditing(_ textView: UITextView) {
+
+        vWBgDescription.layer.borderColor = UIColor.init(r: 239, g: 90, b: 0, a: 1).cgColor
+        vWBgDescription.layer.borderWidth = 1
+    }
+    func textViewDidEndEditing(_ textView: UITextView) {
+
+        
+        vWBgDescription.layer.borderWidth = 0.4
+        vWBgDescription.layer.borderColor = UIColor.init(r: 195, g: 195, b: 195, a: 1).cgColor
+        
+    }
+    }
+

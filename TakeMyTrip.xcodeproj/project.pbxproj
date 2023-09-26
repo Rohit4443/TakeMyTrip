@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		1B65BF6369D30D4DCDDCB9DC /* Pods_TakeMyTrip.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6598B739F422875F196D4800 /* Pods_TakeMyTrip.framework */; };
 		4E3ECE70AB2038DEC67EB2BC /* Pods_TakeMyTripTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D996D6D654B0F15A2B5B51E /* Pods_TakeMyTripTests.framework */; };
+		5F0867D62AA865A100B6D420 /* HomePostDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F0867D42AA865A100B6D420 /* HomePostDetailVC.swift */; };
+		5F0867D72AA865A100B6D420 /* HomePostDetailVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5F0867D52AA865A100B6D420 /* HomePostDetailVC.xib */; };
 		5F2F0A222A8397300088170F /* ForgotPasswordVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F2F0A202A8397300088170F /* ForgotPasswordVC.swift */; };
 		5F2F0A232A8397300088170F /* ForgotPasswordVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5F2F0A212A8397300088170F /* ForgotPasswordVC.xib */; };
 		5F2F0A282A839B8F0088170F /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F2F0A262A839B8F0088170F /* HomeVC.swift */; };
@@ -19,6 +21,8 @@
 		5F75BE0A2AA09C34002B6DA3 /* AddTripActivityOverlayVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5F75BE082AA09C34002B6DA3 /* AddTripActivityOverlayVC.xib */; };
 		5F75BE0D2AA09EC4002B6DA3 /* TripActivityOverlayCVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F75BE0B2AA09EC4002B6DA3 /* TripActivityOverlayCVCell.swift */; };
 		5F75BE0E2AA09EC4002B6DA3 /* TripActivityOverlayCVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5F75BE0C2AA09EC4002B6DA3 /* TripActivityOverlayCVCell.xib */; };
+		5F7E9E7C2AB18E2000DBE2EC /* OneToOneChatVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F7E9E7A2AB18E2000DBE2EC /* OneToOneChatVC.swift */; };
+		5F7E9E7D2AB18E2000DBE2EC /* OneToOneChatVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5F7E9E7B2AB18E2000DBE2EC /* OneToOneChatVC.xib */; };
 		5F7FCCD22A8257BC00010FBE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F7FCCD12A8257BC00010FBE /* AppDelegate.swift */; };
 		5F7FCCD42A8257BC00010FBE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F7FCCD32A8257BC00010FBE /* SceneDelegate.swift */; };
 		5F7FCCD62A8257BC00010FBE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F7FCCD52A8257BC00010FBE /* ViewController.swift */; };
@@ -58,6 +62,7 @@
 		5F8EF1352A836BF0008BE6E6 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5F8EF1332A836BF0008BE6E6 /* LoginViewController.xib */; };
 		5F8EF1392A837480008BE6E6 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F8EF1372A837480008BE6E6 /* SignUpViewController.swift */; };
 		5F8EF13A2A837480008BE6E6 /* SignUpViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5F8EF1382A837480008BE6E6 /* SignUpViewController.xib */; };
+		5F8F17982AB815910023B0F6 /* KeyboardVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F8F17972AB815910023B0F6 /* KeyboardVM.swift */; };
 		5F8F735E2A9CD5A2009D244A /* ReportVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F8F735C2A9CD5A2009D244A /* ReportVC.swift */; };
 		5F8F735F2A9CD5A2009D244A /* ReportVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5F8F735D2A9CD5A2009D244A /* ReportVC.xib */; };
 		5F9060432A9C7AAC00B512FC /* CommentsTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F9060412A9C7AAC00B512FC /* CommentsTVC.swift */; };
@@ -80,21 +85,32 @@
 		5F9262DB2A94DA0100EE1B97 /* NotifyTVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5F9262D92A94DA0100EE1B97 /* NotifyTVCell.xib */; };
 		5F9557622AA20F9C001074A1 /* AddNewActivityCVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F9557602AA20F9C001074A1 /* AddNewActivityCVCell.swift */; };
 		5F9557632AA20F9C001074A1 /* AddNewActivityCVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5F9557612AA20F9C001074A1 /* AddNewActivityCVCell.xib */; };
+		5F984B8D2AA8B482000FDFC4 /* EditDeletePostPopUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F984B8B2AA8B482000FDFC4 /* EditDeletePostPopUpVC.swift */; };
+		5F984B8E2AA8B482000FDFC4 /* EditDeletePostPopUpVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5F984B8C2AA8B482000FDFC4 /* EditDeletePostPopUpVC.xib */; };
+		5F99A7402AB3075D00CB0CE5 /* EditPostScreenVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F99A73E2AB3075D00CB0CE5 /* EditPostScreenVC.swift */; };
+		5F99A7412AB3075D00CB0CE5 /* EditPostScreenVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5F99A73F2AB3075D00CB0CE5 /* EditPostScreenVC.xib */; };
 		5FACA9AB2A8A1A0300A477EC /* CompleteTripCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FACA9A92A8A1A0300A477EC /* CompleteTripCell.swift */; };
 		5FACA9AC2A8A1A0300A477EC /* CompleteTripCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5FACA9AA2A8A1A0300A477EC /* CompleteTripCell.xib */; };
 		5FB35EE22A93713A00FD1971 /* DraftedActivitiesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FB35EE02A93713A00FD1971 /* DraftedActivitiesVC.swift */; };
 		5FB35EE32A93713A00FD1971 /* DraftedActivitiesVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5FB35EE12A93713A00FD1971 /* DraftedActivitiesVC.xib */; };
+		5FBD75AF2ABAAF4E001514A1 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FBD75AE2ABAAF4E001514A1 /* TabBarViewController.swift */; };
 		5FBDA9EE2A97233600ABB93F /* ActivitiesListTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FBDA9EC2A97233600ABB93F /* ActivitiesListTVC.swift */; };
 		5FBDA9EF2A97233600ABB93F /* ActivitiesListTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5FBDA9ED2A97233600ABB93F /* ActivitiesListTVC.xib */; };
 		5FC34EF22AA5B1FB008FD01F /* AsyncAlgorithms in Frameworks */ = {isa = PBXBuildFile; productRef = 5FC34EF12AA5B1FB008FD01F /* AsyncAlgorithms */; };
-		5FC9E6602A8E389700CCCC83 /* ChatMessagesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FC9E65E2A8E389700CCCC83 /* ChatMessagesVC.swift */; };
-		5FC9E6612A8E389700CCCC83 /* ChatMessagesVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5FC9E65F2A8E389700CCCC83 /* ChatMessagesVC.xib */; };
 		5FC9E6642A8E396400CCCC83 /* LeftTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FC9E6622A8E396400CCCC83 /* LeftTVCell.swift */; };
 		5FC9E6652A8E396400CCCC83 /* LeftTVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5FC9E6632A8E396400CCCC83 /* LeftTVCell.xib */; };
 		5FC9E6682A8E398800CCCC83 /* RightTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FC9E6662A8E398800CCCC83 /* RightTVCell.swift */; };
 		5FC9E6692A8E398800CCCC83 /* RightTVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5FC9E6672A8E398800CCCC83 /* RightTVCell.xib */; };
 		5FD816FA2A8D0582007A053A /* CompleteTripCVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FD816F82A8D0582007A053A /* CompleteTripCVCell.swift */; };
 		5FD816FB2A8D0582007A053A /* CompleteTripCVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5FD816F92A8D0582007A053A /* CompleteTripCVCell.xib */; };
+		5FD9C0422AB964FC00B4F861 /* ShowPostDetailTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FD9C0402AB964FC00B4F861 /* ShowPostDetailTVCell.swift */; };
+		5FD9C0432AB964FC00B4F861 /* ShowPostDetailTVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5FD9C0412AB964FC00B4F861 /* ShowPostDetailTVCell.xib */; };
+		5FD9C0462AB96F2100B4F861 /* ShowPostDetailCVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FD9C0442AB96F2100B4F861 /* ShowPostDetailCVCell.swift */; };
+		5FD9C0472AB96F2100B4F861 /* ShowPostDetailCVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5FD9C0452AB96F2100B4F861 /* ShowPostDetailCVCell.xib */; };
+		5FEC7ADD2AA98CEC000464CA /* BlockReportPopUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FEC7ADB2AA98CEC000464CA /* BlockReportPopUpVC.swift */; };
+		5FEC7ADE2AA98CEC000464CA /* BlockReportPopUpVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5FEC7ADC2AA98CEC000464CA /* BlockReportPopUpVC.xib */; };
+		5FFD40802AA9E36600C423D2 /* ShowPostVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FFD407E2AA9E36600C423D2 /* ShowPostVC.swift */; };
+		5FFD40812AA9E36600C423D2 /* ShowPostVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5FFD407F2AA9E36600C423D2 /* ShowPostVC.xib */; };
 		84F3D7711235A2D6F16A1F77 /* Pods_TakeMyTrip_TakeMyTripUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7A2B0D950A375F1000AEE6E /* Pods_TakeMyTrip_TakeMyTripUITests.framework */; };
 		B309233F2A90EDE10080CB5E /* BlockedUserVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B309233D2A90EDE10080CB5E /* BlockedUserVC.swift */; };
 		B30923402A90EDE10080CB5E /* BlockedUserVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = B309233E2A90EDE10080CB5E /* BlockedUserVC.xib */; };
@@ -221,6 +237,8 @@
 		464FEC304D5BF8960E885C2E /* Pods-TakeMyTrip.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TakeMyTrip.debug.xcconfig"; path = "Target Support Files/Pods-TakeMyTrip/Pods-TakeMyTrip.debug.xcconfig"; sourceTree = "<group>"; };
 		4D996D6D654B0F15A2B5B51E /* Pods_TakeMyTripTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TakeMyTripTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5BE019BC97A963CEA276B27F /* Pods-TakeMyTrip.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TakeMyTrip.release.xcconfig"; path = "Target Support Files/Pods-TakeMyTrip/Pods-TakeMyTrip.release.xcconfig"; sourceTree = "<group>"; };
+		5F0867D42AA865A100B6D420 /* HomePostDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePostDetailVC.swift; sourceTree = "<group>"; };
+		5F0867D52AA865A100B6D420 /* HomePostDetailVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomePostDetailVC.xib; sourceTree = "<group>"; };
 		5F2F0A202A8397300088170F /* ForgotPasswordVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordVC.swift; sourceTree = "<group>"; };
 		5F2F0A212A8397300088170F /* ForgotPasswordVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ForgotPasswordVC.xib; sourceTree = "<group>"; };
 		5F2F0A262A839B8F0088170F /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
@@ -231,6 +249,8 @@
 		5F75BE082AA09C34002B6DA3 /* AddTripActivityOverlayVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddTripActivityOverlayVC.xib; sourceTree = "<group>"; };
 		5F75BE0B2AA09EC4002B6DA3 /* TripActivityOverlayCVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripActivityOverlayCVCell.swift; sourceTree = "<group>"; };
 		5F75BE0C2AA09EC4002B6DA3 /* TripActivityOverlayCVCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TripActivityOverlayCVCell.xib; sourceTree = "<group>"; };
+		5F7E9E7A2AB18E2000DBE2EC /* OneToOneChatVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OneToOneChatVC.swift; sourceTree = "<group>"; };
+		5F7E9E7B2AB18E2000DBE2EC /* OneToOneChatVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OneToOneChatVC.xib; sourceTree = "<group>"; };
 		5F7FCCCE2A8257BC00010FBE /* TakeMyTrip.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TakeMyTrip.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5F7FCCD12A8257BC00010FBE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5F7FCCD32A8257BC00010FBE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -266,6 +286,7 @@
 		5F8EF1332A836BF0008BE6E6 /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
 		5F8EF1372A837480008BE6E6 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		5F8EF1382A837480008BE6E6 /* SignUpViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SignUpViewController.xib; sourceTree = "<group>"; };
+		5F8F17972AB815910023B0F6 /* KeyboardVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardVM.swift; sourceTree = "<group>"; };
 		5F8F735C2A9CD5A2009D244A /* ReportVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportVC.swift; sourceTree = "<group>"; };
 		5F8F735D2A9CD5A2009D244A /* ReportVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ReportVC.xib; sourceTree = "<group>"; };
 		5F9060412A9C7AAC00B512FC /* CommentsTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentsTVC.swift; sourceTree = "<group>"; };
@@ -288,20 +309,31 @@
 		5F9262D92A94DA0100EE1B97 /* NotifyTVCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NotifyTVCell.xib; sourceTree = "<group>"; };
 		5F9557602AA20F9C001074A1 /* AddNewActivityCVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewActivityCVCell.swift; sourceTree = "<group>"; };
 		5F9557612AA20F9C001074A1 /* AddNewActivityCVCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddNewActivityCVCell.xib; sourceTree = "<group>"; };
+		5F984B8B2AA8B482000FDFC4 /* EditDeletePostPopUpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditDeletePostPopUpVC.swift; sourceTree = "<group>"; };
+		5F984B8C2AA8B482000FDFC4 /* EditDeletePostPopUpVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EditDeletePostPopUpVC.xib; sourceTree = "<group>"; };
+		5F99A73E2AB3075D00CB0CE5 /* EditPostScreenVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditPostScreenVC.swift; sourceTree = "<group>"; };
+		5F99A73F2AB3075D00CB0CE5 /* EditPostScreenVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EditPostScreenVC.xib; sourceTree = "<group>"; };
 		5FACA9A92A8A1A0300A477EC /* CompleteTripCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompleteTripCell.swift; sourceTree = "<group>"; };
 		5FACA9AA2A8A1A0300A477EC /* CompleteTripCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CompleteTripCell.xib; sourceTree = "<group>"; };
 		5FB35EE02A93713A00FD1971 /* DraftedActivitiesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DraftedActivitiesVC.swift; sourceTree = "<group>"; };
 		5FB35EE12A93713A00FD1971 /* DraftedActivitiesVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DraftedActivitiesVC.xib; sourceTree = "<group>"; };
+		5FBD75AE2ABAAF4E001514A1 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
 		5FBDA9EC2A97233600ABB93F /* ActivitiesListTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivitiesListTVC.swift; sourceTree = "<group>"; };
 		5FBDA9ED2A97233600ABB93F /* ActivitiesListTVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ActivitiesListTVC.xib; sourceTree = "<group>"; };
-		5FC9E65E2A8E389700CCCC83 /* ChatMessagesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatMessagesVC.swift; sourceTree = "<group>"; };
-		5FC9E65F2A8E389700CCCC83 /* ChatMessagesVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChatMessagesVC.xib; sourceTree = "<group>"; };
 		5FC9E6622A8E396400CCCC83 /* LeftTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeftTVCell.swift; sourceTree = "<group>"; };
 		5FC9E6632A8E396400CCCC83 /* LeftTVCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LeftTVCell.xib; sourceTree = "<group>"; };
 		5FC9E6662A8E398800CCCC83 /* RightTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RightTVCell.swift; sourceTree = "<group>"; };
 		5FC9E6672A8E398800CCCC83 /* RightTVCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RightTVCell.xib; sourceTree = "<group>"; };
 		5FD816F82A8D0582007A053A /* CompleteTripCVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompleteTripCVCell.swift; sourceTree = "<group>"; };
 		5FD816F92A8D0582007A053A /* CompleteTripCVCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CompleteTripCVCell.xib; sourceTree = "<group>"; };
+		5FD9C0402AB964FC00B4F861 /* ShowPostDetailTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowPostDetailTVCell.swift; sourceTree = "<group>"; };
+		5FD9C0412AB964FC00B4F861 /* ShowPostDetailTVCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ShowPostDetailTVCell.xib; sourceTree = "<group>"; };
+		5FD9C0442AB96F2100B4F861 /* ShowPostDetailCVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowPostDetailCVCell.swift; sourceTree = "<group>"; };
+		5FD9C0452AB96F2100B4F861 /* ShowPostDetailCVCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ShowPostDetailCVCell.xib; sourceTree = "<group>"; };
+		5FEC7ADB2AA98CEC000464CA /* BlockReportPopUpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlockReportPopUpVC.swift; sourceTree = "<group>"; };
+		5FEC7ADC2AA98CEC000464CA /* BlockReportPopUpVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BlockReportPopUpVC.xib; sourceTree = "<group>"; };
+		5FFD407E2AA9E36600C423D2 /* ShowPostVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowPostVC.swift; sourceTree = "<group>"; };
+		5FFD407F2AA9E36600C423D2 /* ShowPostVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ShowPostVC.xib; sourceTree = "<group>"; };
 		6598B739F422875F196D4800 /* Pods_TakeMyTrip.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TakeMyTrip.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		74BFED2C042CB9849ACCAE9A /* Pods-TakeMyTrip-TakeMyTripUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TakeMyTrip-TakeMyTripUITests.release.xcconfig"; path = "Target Support Files/Pods-TakeMyTrip-TakeMyTripUITests/Pods-TakeMyTrip-TakeMyTripUITests.release.xcconfig"; sourceTree = "<group>"; };
 		B309233D2A90EDE10080CB5E /* BlockedUserVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlockedUserVC.swift; sourceTree = "<group>"; };
@@ -441,6 +473,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5F0867D12AA857D700B6D420 /* HomePostDetail */ = {
+			isa = PBXGroup;
+			children = (
+				5F0867D22AA8580200B6D420 /* View */,
+			);
+			path = HomePostDetail;
+			sourceTree = "<group>";
+		};
+		5F0867D22AA8580200B6D420 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				5F0867D42AA865A100B6D420 /* HomePostDetailVC.swift */,
+				5F0867D52AA865A100B6D420 /* HomePostDetailVC.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		5F2F0A1E2A8396460088170F /* ForgotPassword */ = {
 			isa = PBXGroup;
 			children = (
@@ -587,6 +636,11 @@
 		5F7FCD1A2A82796C00010FBE /* OnBoardingScreens */ = {
 			isa = PBXGroup;
 			children = (
+				5F99A73C2AB3071700CB0CE5 /* EditPostScreen */,
+				5FFD40782AA9E2E700C423D2 /* UserPost */,
+				5FEC7AD92AA98CB2000464CA /* BlockReportPopUp */,
+				5F984B892AA8B43F000FDFC4 /* EditDeletePostPopUp */,
+				5F0867D12AA857D700B6D420 /* HomePostDetail */,
 				5F921CD52AA0C5AD0003658D /* AddNewActivity */,
 				5F75BE052AA09BED002B6DA3 /* AddTripActivity */,
 				5F8F735A2A9CD566009D244A /* Report */,
@@ -595,10 +649,10 @@
 				5F842DC62A963904007A7ECB /* AddActivities */,
 				5F8951382A95FBE100F427BB /* EditProfile */,
 				5F427BDE2A95E86800F18D9B /* Filter */,
+				B34380382A92181E00D58B7F /* Invite Friends */,
 				5F9262D22A94D7F400EE1B97 /* Notification */,
 				5F90C2512A946FDD0004F57F /* SearchUsers */,
 				B375F2032A9318A8009D2792 /* SavedTrips */,
-				B34380382A92181E00D58B7F /* Invite Friends */,
 				B34380322A920BCF00D58B7F /* ChangePassword */,
 				B343802C2A9204C100D58B7F /* ShowBlockedUserProfile */,
 				B309233B2A90ED820080CB5E /* BlockedUserList */,
@@ -837,6 +891,40 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		5F984B892AA8B43F000FDFC4 /* EditDeletePostPopUp */ = {
+			isa = PBXGroup;
+			children = (
+				5F984B8A2AA8B453000FDFC4 /* View */,
+			);
+			path = EditDeletePostPopUp;
+			sourceTree = "<group>";
+		};
+		5F984B8A2AA8B453000FDFC4 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				5F984B8B2AA8B482000FDFC4 /* EditDeletePostPopUpVC.swift */,
+				5F984B8C2AA8B482000FDFC4 /* EditDeletePostPopUpVC.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		5F99A73C2AB3071700CB0CE5 /* EditPostScreen */ = {
+			isa = PBXGroup;
+			children = (
+				5F99A73D2AB3072700CB0CE5 /* View */,
+			);
+			path = EditPostScreen;
+			sourceTree = "<group>";
+		};
+		5F99A73D2AB3072700CB0CE5 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				5F99A73E2AB3075D00CB0CE5 /* EditPostScreenVC.swift */,
+				5F99A73F2AB3075D00CB0CE5 /* EditPostScreenVC.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		5FC9E65C2A8E383900CCCC83 /* ChatDetail */ = {
 			isa = PBXGroup;
 			children = (
@@ -848,12 +936,51 @@
 		5FC9E65D2A8E385A00CCCC83 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				5FC9E65E2A8E389700CCCC83 /* ChatMessagesVC.swift */,
-				5FC9E65F2A8E389700CCCC83 /* ChatMessagesVC.xib */,
+				5F7E9E7A2AB18E2000DBE2EC /* OneToOneChatVC.swift */,
+				5F7E9E7B2AB18E2000DBE2EC /* OneToOneChatVC.xib */,
 				5FC9E6622A8E396400CCCC83 /* LeftTVCell.swift */,
 				5FC9E6632A8E396400CCCC83 /* LeftTVCell.xib */,
 				5FC9E6662A8E398800CCCC83 /* RightTVCell.swift */,
 				5FC9E6672A8E398800CCCC83 /* RightTVCell.xib */,
+				5F8F17972AB815910023B0F6 /* KeyboardVM.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		5FEC7AD92AA98CB2000464CA /* BlockReportPopUp */ = {
+			isa = PBXGroup;
+			children = (
+				5FEC7ADA2AA98CC9000464CA /* View */,
+			);
+			path = BlockReportPopUp;
+			sourceTree = "<group>";
+		};
+		5FEC7ADA2AA98CC9000464CA /* View */ = {
+			isa = PBXGroup;
+			children = (
+				5FEC7ADB2AA98CEC000464CA /* BlockReportPopUpVC.swift */,
+				5FEC7ADC2AA98CEC000464CA /* BlockReportPopUpVC.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		5FFD40782AA9E2E700C423D2 /* UserPost */ = {
+			isa = PBXGroup;
+			children = (
+				5FFD40792AA9E31000C423D2 /* View */,
+			);
+			path = UserPost;
+			sourceTree = "<group>";
+		};
+		5FFD40792AA9E31000C423D2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				5FFD407E2AA9E36600C423D2 /* ShowPostVC.swift */,
+				5FFD407F2AA9E36600C423D2 /* ShowPostVC.xib */,
+				5FD9C0402AB964FC00B4F861 /* ShowPostDetailTVCell.swift */,
+				5FD9C0412AB964FC00B4F861 /* ShowPostDetailTVCell.xib */,
+				5FD9C0442AB96F2100B4F861 /* ShowPostDetailCVCell.swift */,
+				5FD9C0452AB96F2100B4F861 /* ShowPostDetailCVCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -966,6 +1093,7 @@
 			isa = PBXGroup;
 			children = (
 				B32145722A83BE9300E05452 /* TabBarVC.swift */,
+				5FBD75AE2ABAAF4E001514A1 /* TabBarViewController.swift */,
 			);
 			path = TabBarView;
 			sourceTree = "<group>";
@@ -1331,11 +1459,13 @@
 				5F7FCD0F2A82598600010FBE /* Poppins-SemiBold.ttf in Resources */,
 				B3CAD2662A849F8300C2FD09 /* HomeTVCell.xib in Resources */,
 				5F90BCFF2A97434F00E395C0 /* EditDeletePopUpActivitiesVC.xib in Resources */,
+				5F7E9E7D2AB18E2000DBE2EC /* OneToOneChatVC.xib in Resources */,
 				5F2F0A232A8397300088170F /* ForgotPasswordVC.xib in Resources */,
 				B321456E2A83BCAD00E05452 /* ProfileVC.xib in Resources */,
 				5F8CE8DE2A8A59EC0000C1DD /* CreateTripViewController.xib in Resources */,
 				B3CAD3102A84C35300C2FD09 /* CustomPickerController.xib in Resources */,
 				5F90C25E2A9476C70004F57F /* UserTVC.xib in Resources */,
+				5FEC7ADE2AA98CEC000464CA /* BlockReportPopUpVC.xib in Resources */,
 				5F9060442A9C7AAC00B512FC /* CommentsTVC.xib in Resources */,
 				5F427BE32A95E89A00F18D9B /* FilterVC.xib in Resources */,
 				5FB35EE32A93713A00FD1971 /* DraftedActivitiesVC.xib in Resources */,
@@ -1350,13 +1480,16 @@
 				5FACA9AC2A8A1A0300A477EC /* CompleteTripCell.xib in Resources */,
 				5FD816FB2A8D0582007A053A /* CompleteTripCVCell.xib in Resources */,
 				5F7FCD0B2A82597A00010FBE /* Poppins-Regular.ttf in Resources */,
+				5FD9C0432AB964FC00B4F861 /* ShowPostDetailTVCell.xib in Resources */,
+				5FFD40812AA9E36600C423D2 /* ShowPostVC.xib in Resources */,
+				5F0867D72AA865A100B6D420 /* HomePostDetailVC.xib in Resources */,
 				5F9262DB2A94DA0100EE1B97 /* NotifyTVCell.xib in Resources */,
+				5F984B8E2AA8B482000FDFC4 /* EditDeletePostPopUpVC.xib in Resources */,
 				B343803D2A92188900D58B7F /* InviteFriendsVC.xib in Resources */,
 				B321455C2A83BB4A00E05452 /* MyTripsVC.xib in Resources */,
 				5F865D082A8C9CC400901C61 /* MessageTVCell.xib in Resources */,
 				B3FFE9822A90C5260042E7F5 /* SettingsVC.xib in Resources */,
 				5F7FCD032A82595A00010FBE /* Poppins-Bold.ttf in Resources */,
-				5FC9E6612A8E389700CCCC83 /* ChatMessagesVC.xib in Resources */,
 				5F75BE0A2AA09C34002B6DA3 /* AddTripActivityOverlayVC.xib in Resources */,
 				5FC9E6652A8E396400CCCC83 /* LeftTVCell.xib in Resources */,
 				5F9262D72A94D85300EE1B97 /* NotificationVC.xib in Resources */,
@@ -1381,7 +1514,9 @@
 				B3CAD3342A84C35300C2FD09 /* ErrorView.xib in Resources */,
 				5F842DCB2A963947007A7ECB /* AddActivitiesVC.xib in Resources */,
 				B3CAD26A2A84A00900C2FD09 /* HomeSecondCVCell.xib in Resources */,
+				5F99A7412AB3075D00CB0CE5 /* EditPostScreenVC.xib in Resources */,
 				B3CAD3122A84C35300C2FD09 /* GalleryVC.xib in Resources */,
+				5FD9C0472AB96F2100B4F861 /* ShowPostDetailCVCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1529,6 +1664,7 @@
 				B3CAD34D2A84C35300C2FD09 /* AppConstant.swift in Sources */,
 				5FACA9AB2A8A1A0300A477EC /* CompleteTripCell.swift in Sources */,
 				5FBDA9EE2A97233600ABB93F /* ActivitiesListTVC.swift in Sources */,
+				5FEC7ADD2AA98CEC000464CA /* BlockReportPopUpVC.swift in Sources */,
 				B3CAD3192A84C35300C2FD09 /* HandlerView.swift in Sources */,
 				5F75BE0D2AA09EC4002B6DA3 /* TripActivityOverlayCVCell.swift in Sources */,
 				B3CAD34B2A84C35300C2FD09 /* Date+Custom.swift in Sources */,
@@ -1537,13 +1673,13 @@
 				B3CAD31F2A84C35300C2FD09 /* GridViewCell.swift in Sources */,
 				B3CAD34C2A84C35300C2FD09 /* UICollectionView+Custom.swift in Sources */,
 				5F9060432A9C7AAC00B512FC /* CommentsTVC.swift in Sources */,
+				5F8F17982AB815910023B0F6 /* KeyboardVM.swift in Sources */,
 				B3CAD3402A84C35300C2FD09 /* HttpManager.swift in Sources */,
 				B3CAD3572A84C35400C2FD09 /* UIStoryboard+Custom.swift in Sources */,
 				B3CAD3202A84C35300C2FD09 /* FeedGalleryCollectionView.swift in Sources */,
 				B3CAD3422A84C35300C2FD09 /* ApiHandler.swift in Sources */,
 				5F842DCA2A963947007A7ECB /* AddActivitiesVC.swift in Sources */,
 				B34380362A920C0400D58B7F /* ChangePasswordVC.swift in Sources */,
-				5FC9E6602A8E389700CCCC83 /* ChatMessagesVC.swift in Sources */,
 				B3CAD3412A84C35300C2FD09 /* GetImageFromPicker.swift in Sources */,
 				B3CAD3592A84C35400C2FD09 /* UITableView+Custom.swift in Sources */,
 				B3CAD33E2A84C35300C2FD09 /* API.swift in Sources */,
@@ -1565,7 +1701,9 @@
 				5F7FCCD22A8257BC00010FBE /* AppDelegate.swift in Sources */,
 				B343803C2A92188900D58B7F /* InviteFriendsVC.swift in Sources */,
 				B3CAD3382A84C35300C2FD09 /* UserDefaultsCustom.swift in Sources */,
+				5FD9C0422AB964FC00B4F861 /* ShowPostDetailTVCell.swift in Sources */,
 				B3CAD3512A84C35300C2FD09 /* Data+Custom.swift in Sources */,
+				5F99A7402AB3075D00CB0CE5 /* EditPostScreenVC.swift in Sources */,
 				B3CAD3522A84C35300C2FD09 /* UIFont+Custom.swift in Sources */,
 				B3CAD3352A84C35300C2FD09 /* ErrorView.swift in Sources */,
 				B3CAD33A2A84C35300C2FD09 /* DefaultManager.swift in Sources */,
@@ -1573,8 +1711,11 @@
 				B3CAD33F2A84C35300C2FD09 /* Utils.swift in Sources */,
 				B3CAD3312A84C35300C2FD09 /* ImagePicker.swift in Sources */,
 				B3CAD3562A84C35400C2FD09 /* Double+Custom.swift in Sources */,
+				5F984B8D2AA8B482000FDFC4 /* EditDeletePostPopUpVC.swift in Sources */,
+				5F0867D62AA865A100B6D420 /* HomePostDetailVC.swift in Sources */,
 				B3CAD31B2A84C35300C2FD09 /* VideoScrollView.swift in Sources */,
 				B321455B2A83BB4A00E05452 /* MyTripsVC.swift in Sources */,
+				5FBD75AF2ABAAF4E001514A1 /* TabBarViewController.swift in Sources */,
 				B3CAD3362A84C35300C2FD09 /* UserData.swift in Sources */,
 				5FD816FA2A8D0582007A053A /* CompleteTripCVCell.swift in Sources */,
 				B3CAD3482A84C35300C2FD09 /* String+Custom.swift in Sources */,
@@ -1608,6 +1749,7 @@
 				5FC9E6682A8E398800CCCC83 /* RightTVCell.swift in Sources */,
 				B3CAD32E2A84C35300C2FD09 /* Validator.swift in Sources */,
 				B3CAD3442A84C35300C2FD09 /* UILabel+Custom.swift in Sources */,
+				5FD9C0462AB96F2100B4F861 /* ShowPostDetailCVCell.swift in Sources */,
 				B3CAD3272A84C35300C2FD09 /* IJReachability.swift in Sources */,
 				B32145672A83BC3500E05452 /* ChatListVC.swift in Sources */,
 				B321456D2A83BCAD00E05452 /* ProfileVC.swift in Sources */,
@@ -1619,6 +1761,7 @@
 				B3CAD31C2A84C35300C2FD09 /* AVAssetTimeSelector.swift in Sources */,
 				5F865D072A8C9CC400901C61 /* MessageTVCell.swift in Sources */,
 				B34380302A92056600D58B7F /* BlockedUserProfileVC.swift in Sources */,
+				5FFD40802AA9E36600C423D2 /* ShowPostVC.swift in Sources */,
 				B3CAD3172A84C35300C2FD09 /* VideoCropView.swift in Sources */,
 				B3CAD3502A84C35300C2FD09 /* FloatingTextField.swift in Sources */,
 				B32145732A83BE9300E05452 /* TabBarVC.swift in Sources */,
@@ -1633,6 +1776,7 @@
 				B3CAD32F2A84C35300C2FD09 /* GoogleManager.swift in Sources */,
 				B3CAD3432A84C35300C2FD09 /* PresentableController.swift in Sources */,
 				5F8EF1392A837480008BE6E6 /* SignUpViewController.swift in Sources */,
+				5F7E9E7C2AB18E2000DBE2EC /* OneToOneChatVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

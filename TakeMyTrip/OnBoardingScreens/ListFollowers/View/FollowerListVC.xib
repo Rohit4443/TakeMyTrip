@@ -32,9 +32,8 @@
                             <rect key="frame" x="30" y="20" width="345" height="80"/>
                             <subviews>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0x8-v9-UHN">
-                                    <rect key="frame" x="0.0" y="32.5" width="36.5" height="15"/>
+                                    <rect key="frame" x="0.0" y="32.5" width="40" height="15"/>
                                     <constraints>
-                                        <constraint firstAttribute="width" constant="36.329999999999998" id="D2s-YC-cno"/>
                                         <constraint firstAttribute="height" constant="15" id="irE-kY-1Mc"/>
                                     </constraints>
                                     <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
@@ -44,9 +43,8 @@
                                     </connections>
                                 </button>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Followers" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S92-dr-tZO">
-                                    <rect key="frame" x="51.5" y="24" width="98.5" height="32"/>
+                                    <rect key="frame" x="55" y="24" width="98.5" height="32"/>
                                     <constraints>
-                                        <constraint firstAttribute="width" constant="98.5" id="kT3-m9-S8F"/>
                                         <constraint firstAttribute="height" constant="32" id="x15-aN-3K3"/>
                                     </constraints>
                                     <fontDescription key="fontDescription" name="Poppins-Medium" family="Poppins" pointSize="21"/>
@@ -97,7 +95,7 @@
                             </userDefinedRuntimeAttributes>
                         </view>
                         <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="SIf-fC-JPC">
-                            <rect key="frame" x="30" y="110" width="325" height="557"/>
+                            <rect key="frame" x="0.0" y="110" width="375" height="557"/>
                             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <connections>
                                 <outlet property="dataSource" destination="kof-ba-5zT" id="aVf-gv-IfX"/>
@@ -109,8 +107,8 @@
                     <constraints>
                         <constraint firstAttribute="trailing" secondItem="T6U-V8-J8i" secondAttribute="trailing" id="2fa-Fi-CYC"/>
                         <constraint firstItem="T6U-V8-J8i" firstAttribute="leading" secondItem="kof-ba-5zT" secondAttribute="leading" constant="30" id="CNf-dD-dkA"/>
-                        <constraint firstAttribute="trailing" secondItem="SIf-fC-JPC" secondAttribute="trailing" constant="20" id="Th2-qb-PND"/>
-                        <constraint firstItem="SIf-fC-JPC" firstAttribute="leading" secondItem="kof-ba-5zT" secondAttribute="leading" constant="30" id="iVT-oQ-zl2"/>
+                        <constraint firstAttribute="trailing" secondItem="SIf-fC-JPC" secondAttribute="trailing" id="Th2-qb-PND"/>
+                        <constraint firstItem="SIf-fC-JPC" firstAttribute="leading" secondItem="kof-ba-5zT" secondAttribute="leading" id="iVT-oQ-zl2"/>
                         <constraint firstItem="SIf-fC-JPC" firstAttribute="top" secondItem="T6U-V8-J8i" secondAttribute="bottom" constant="10" id="pc1-5h-WW7"/>
                         <constraint firstAttribute="bottom" secondItem="SIf-fC-JPC" secondAttribute="bottom" id="s7h-MA-pK2"/>
                     </constraints>

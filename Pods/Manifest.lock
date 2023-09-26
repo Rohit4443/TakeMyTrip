@@ -1,5 +1,6 @@
 PODS:
   - GrowingTextView (0.7.2)
+  - IQKeyboardManager (6.5.12)
   - IQKeyboardManagerSwift (6.5.12)
   - Kingfisher (6.3.1)
   - SDWebImage (5.17.0):
@@ -13,6 +14,7 @@ PODS:
 
 DEPENDENCIES:
   - GrowingTextView
+  - IQKeyboardManager
   - IQKeyboardManagerSwift
   - Kingfisher
   - SDWebImage
@@ -23,6 +25,7 @@ DEPENDENCIES:
 SPEC REPOS:
   trunk:
     - GrowingTextView
+    - IQKeyboardManager
     - IQKeyboardManagerSwift
     - Kingfisher
     - SDWebImage
@@ -41,6 +44,7 @@ CHECKOUT OPTIONS:
 
 SPEC CHECKSUMS:
   GrowingTextView: 876bf42005b5e4a4fd740597db12caaf41f0fe6c
+  IQKeyboardManager: b1fd66ccf7a79095bdcc4a2735231586f744216e
   IQKeyboardManagerSwift: 371b08cb39664fb56030f5345c815a4ffc74bbc0
   Kingfisher: 016c8b653a35add51dd34a3aba36b580041acc74
   SDWebImage: 750adf017a315a280c60fde706ab1e552a3ae4e9
@@ -49,6 +53,6 @@ SPEC CHECKSUMS:
   Swifter: 4c2f8cf320c2f751c10128f841d8e9bd8609d988
   SwiftyStoreKit: 6b9c08810269f030586dac1fae8e75871a82e84a
 
-PODFILE CHECKSUM: 05f280e3e76af5b0322bc0c8012717f9cbd81370
+PODFILE CHECKSUM: 9d9247bd11db2f74f7164b3d72285559ba653824
 
 COCOAPODS: 1.11.3

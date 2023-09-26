@@ -12,6 +12,7 @@ class CommentsTVC: UITableViewCell {
     @IBOutlet weak var vWBackground1: UIView!
     @IBOutlet weak var lblTextReply: UILabel!
     
+    @IBOutlet weak var vWSeeReply: UIView!
     weak var delegate: CommentsTVCDelegate?
     var replies: [String] = [] {
         didSet {

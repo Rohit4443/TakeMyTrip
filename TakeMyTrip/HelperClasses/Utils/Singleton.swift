@@ -202,16 +202,16 @@ extension Singleton{
 //        window?.frame = UIScreen.main.bounds
 //        window?.makeKeyAndVisible()
 //    }
-    
-    func setTutorVC(window: UIWindow? = HEIGHT.window){
-        
-      //  let window: UIWindow? = HEIGHT.window
-         let vc = TabBarVC()
-         window?.rootViewController = vc
-         window?.frame = UIScreen.main.bounds
-         window?.makeKeyAndVisible()
-        
-        
-    }
+//
+//    func setTutorVC(window: UIWindow? = HEIGHT.window){
+//
+//      //  let window: UIWindow? = HEIGHT.window
+//         let vc = TabBarViewController()
+//         window?.rootViewController = vc
+//         window?.frame = UIScreen.main.bounds
+//         window?.makeKeyAndVisible()
+//
+//
+//    }
     
 }

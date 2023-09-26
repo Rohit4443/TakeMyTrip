@@ -28,7 +28,7 @@
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SXx-dt-xgX">
                     <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                     <subviews>
-                        <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="tAX-jA-6Tv">
+                        <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="tAX-jA-6Tv">
                             <rect key="frame" x="20" y="120" width="335" height="547"/>
                             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             <connections>
@@ -48,10 +48,9 @@
                     <rect key="frame" x="30" y="20" width="345" height="80"/>
                     <subviews>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uv6-Ta-98q">
-                            <rect key="frame" x="0.0" y="32.5" width="36.5" height="15"/>
+                            <rect key="frame" x="0.0" y="32.5" width="40" height="15"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="15" id="dxQ-7I-4dT"/>
-                                <constraint firstAttribute="width" constant="36.329999999999998" id="qk4-sr-Sgq"/>
                             </constraints>
                             <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                             <state key="normal" image="ic_backbtn"/>
@@ -60,10 +59,9 @@
                             </connections>
                         </button>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Drafted Activities" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JOU-F2-e4v">
-                            <rect key="frame" x="51.5" y="24" width="180.5" height="32"/>
+                            <rect key="frame" x="55" y="24" width="180.5" height="32"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="32" id="Tha-IK-22s"/>
-                                <constraint firstAttribute="width" constant="180.5" id="d3l-ek-K7n"/>
                             </constraints>
                             <fontDescription key="fontDescription" name="Poppins-Medium" family="Poppins" pointSize="21"/>
                             <nil key="textColor"/>

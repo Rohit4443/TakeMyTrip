@@ -1,5 +1,6 @@
 ${PODS_ROOT}/Target Support Files/Pods-TakeMyTrip/Pods-TakeMyTrip-frameworks.sh
 ${BUILT_PRODUCTS_DIR}/GrowingTextView/GrowingTextView.framework
+${BUILT_PRODUCTS_DIR}/IQKeyboardManager/IQKeyboardManager.framework
 ${BUILT_PRODUCTS_DIR}/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework
 ${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework
 ${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework

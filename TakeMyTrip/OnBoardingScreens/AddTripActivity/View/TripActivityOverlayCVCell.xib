@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -26,18 +26,19 @@
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rD9-82-ZvC">
                         <rect key="frame" x="0.0" y="0.0" width="334" height="536"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_imgTrip" translatesAutoresizingMaskIntoConstraints="NO" id="jYA-Jt-NUB">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_imgTrip" translatesAutoresizingMaskIntoConstraints="NO" id="jYA-Jt-NUB">
                                 <rect key="frame" x="0.0" y="0.0" width="334" height="536"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3II-NA-scm">
-                                <rect key="frame" x="20" y="30" width="42" height="42"/>
+                                <rect key="frame" x="20" y="30" width="40" height="40"/>
                                 <color key="backgroundColor" white="1" alpha="0.46846543874172186" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="42" id="9DT-73-5Vc"/>
-                                    <constraint firstAttribute="height" constant="42" id="dIu-7e-SaT"/>
+                                    <constraint firstAttribute="height" constant="40" id="KDg-vk-mWh"/>
+                                    <constraint firstAttribute="width" constant="40" id="wYI-t6-EDp"/>
                                 </constraints>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <state key="normal" image="ic_backbtn"/>
+                                <buttonConfiguration key="configuration" style="plain" image="ic_arrow"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="isRounded" value="YES"/>
                                 </userDefinedRuntimeAttributes>
@@ -88,10 +89,14 @@
                 <constraint firstAttribute="bottom" secondItem="rD9-82-ZvC" secondAttribute="bottom" id="r89-Uj-3F3"/>
             </constraints>
             <size key="customSize" width="334" height="399"/>
+            <connections>
+                <outlet property="btnBack" destination="3II-NA-scm" id="fA9-fP-pDj"/>
+            </connections>
             <point key="canvasLocation" x="203.19999999999999" y="52.623688155922046"/>
         </collectionViewCell>
     </objects>
     <resources>
+        <image name="ic_arrow" width="28.5" height="14"/>
         <image name="ic_backbtn" width="40" height="18.5"/>
         <image name="ic_btnPerson" width="14" height="24"/>
         <image name="ic_imgTrip" width="381" height="536"/>

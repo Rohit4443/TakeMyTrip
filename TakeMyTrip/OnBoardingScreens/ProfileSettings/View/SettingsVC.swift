@@ -15,7 +15,8 @@ class SettingsVC: UIViewController{
     
     
     //MARK: - Variables -
-    var arraysettings = ["Blocked User","Set Profile as","Drafted Activites","Change Password","Privacy Policy","Term & Conditions","Invite Friends","Delete Account"]
+    var arraysettings = ["Blocked User","Set Profile as","Drafted Activites","Change Password","Privacy Policy","Terms & Conditions","Invite Friends","Delete Account","Logout"]
+    var arrayimg = ["ic_blockImg","ic_setProfile","ic_DraftedActivity","ic_changePasswrd","ic_privacyPolicy","ic_term&condition","ic_inviteFriends","ic_deleteAccount","ic_logout",]
     
     
     
@@ -48,9 +49,11 @@ extension  SettingsVC: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return arraysettings.count
     }
+
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "SettingsTVCell", for: indexPath)as! SettingsTVCell
+        cell.imgImage.image = UIImage(named: arrayimg[indexPath.row])
         cell.lbltext.text = arraysettings[indexPath.row]
         if indexPath.row == 1{
             cell.vWPubPriv.isUserInteractionEnabled = true
@@ -64,6 +67,7 @@ extension  SettingsVC: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 80
     }
+    
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
         
@@ -117,5 +121,6 @@ extension  SettingsVC: UITableViewDelegate, UITableViewDataSource {
         
     }
     
+
 }
 

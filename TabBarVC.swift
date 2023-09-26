@@ -7,47 +7,68 @@
 
 import UIKit
 
-
 class TabBarVC: UITabBarController {
    
-    
     var currentController: UIViewController?
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        setNotificationAbsorver()
+       // setNotificationAbsorver()
+       
+        
+        
+    
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
         self.setTabController()
-    
+        self.tabBarController?.tabBar.backgroundColor = .white
+        self.tabBar.shadowRadius = 2
+        self.tabBar.shadowOpacity = 1
+        self.tabBar.cornerRadius = 20
+        
     }
-    
-    func setNotificationAbsorver() {
-        NotificationCenter.default.addObserver(self, selector: #selector(self.editPostAction(_:)), name: Notification.Name("Profile"), object: nil)
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+        tabBar.frame.size.height = 100
+        tabBar.frame.origin.y = view.frame.size.height - 72
+        self.tabBar.shadowColor =  UIColor(hexString: "#000000",alpha: 0.12)//.systemGray5
     }
+
+//    func setNotificationAbsorver() {
+//        NotificationCenter.default.addObserver(self, selector: #selector(self.editPostAction(_:)), name: Notification.Name("Profile"), object: nil)
+//    }
+//
+//    @objc func editPostAction(_ notification: Notification) {
+//        DispatchQueue.main.asyncAfter(deadline: .now()+0.2) {
+//            self.selectedIndex = 4
+//        }
+//    }
+//
+//    @objc func clickOnImageAction(_ notification: Notification) {
+//        DispatchQueue.main.asyncAfter(deadline: .now()+0.2) {
+//            self.selectedIndex = 0
+//        }
+//    }
     
-    @objc func editPostAction(_ notification: Notification) {
-        DispatchQueue.main.asyncAfter(deadline: .now()+0.2) {
-            self.selectedIndex = 4
-        }
-    }
-    
-    @objc func clickOnImageAction(_ notification: Notification) {
-        DispatchQueue.main.asyncAfter(deadline: .now()+0.2) {
-            self.selectedIndex = 0
-        }
-    }
+//
     
     func setTabController() {
-        //        self.tabBar.backgroundColor = .white
-        //        self.tabBar.shadowColor = .gray
-        //        self.tabBar.shadowOffset = CGSize(width: 0, height: 1)
-        //        self.tabBar.shadowOpacity = 10
-        //        self.tabBar.tintColor = UIColor(hexString: "#207FFA")
+        self.tabBar.backgroundColor = .white
+        self.tabBar.shadowColor =  UIColor(hexString: "#000000",alpha: 0.12)//.systemGray5
+        self.tabBar.layer.cornerRadius = 15
+//        self.tabBar.shadowOffset = CGSize(width: 0, height: 0)
+        self.tabBar.shadowRadius = 2
+        self.tabBar.shadowOpacity = 1
+        self.tabBar.cornerRadius = 20
+        //self.tabBar.tintColor = UIColor(hexString: "#207FFA")
         
-       
         
         let controller1 = HomeVC()
         let controller2 = MyTripsVC()
         let controller3 = CreateTripViewController()
+        controller3.view.backgroundColor = .white
         let controller4 = ChatListVC()
         let controller5 = ProfileVC()
         
@@ -58,13 +79,11 @@ class TabBarVC: UITabBarController {
         controller2.tabBarItem = UITabBarItem(title: nil, image: UIImage(named: "ic_MyTrip")?.withRenderingMode(.alwaysOriginal), selectedImage: UIImage(named: "ic_selectedMyTrip")?.withRenderingMode(.alwaysOriginal))
         
         controller3.tabBarItem = UITabBarItem(title: nil, image: UIImage(named: "ic_CreateTrip")?.withRenderingMode(.alwaysOriginal), selectedImage: UIImage(named: "ic_selectedCreateTrip")?.withRenderingMode(.alwaysOriginal))
+       
         
         controller4.tabBarItem = UITabBarItem(title: nil, image: UIImage(named: "ic_message")?.withRenderingMode(.alwaysOriginal), selectedImage: UIImage(named: "ic_selectedmessage")?.withRenderingMode(.alwaysOriginal))
         
         controller5.tabBarItem = UITabBarItem(title: nil, image: UIImage(named: "ic_profile")?.withRenderingMode(.alwaysOriginal), selectedImage: UIImage(named: "ic_selectedprofile")?.withRenderingMode(.alwaysOriginal))
-        
-        
-        
         
         
         let v1 =  UINavigationController(rootViewController: controller1)

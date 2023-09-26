@@ -17,17 +17,19 @@ class HomeFirstCVCell: UICollectionViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-
+//        self.vWBackground.layer.borderColor = UIColor.black.cgColor
+//        self.vWBackground.layer.borderWidth = 1
+        
         
     }
         override var isSelected: Bool {
             didSet {
-                
+
                 if isSelected {
-                    vWBackground.layer.borderColor = UIColor.init(r: 239, g: 90, b: 0, a: 1).cgColor
+                    vWBackground.layer.borderColor = UIColor.black.cgColor
                     vWBackground.layer.borderWidth = 1
                 } else {
-                    vWBackground.layer.borderColor = UIColor.clear.cgColor
+                    vWBackground.layer.borderColor = UIColor.systemGray.cgColor
                 }
             }
         }

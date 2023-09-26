@@ -6,7 +6,7 @@
 //
 
 import UIKit
-
+import IQKeyboardManager
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
@@ -19,8 +19,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         navController.navigationBar.isHidden = true
         window?.rootViewController = splash
         window?.makeKeyAndVisible()
-        
-        
+        IQKeyboardManager.shared().isEnabled = true
         return true
     }
     

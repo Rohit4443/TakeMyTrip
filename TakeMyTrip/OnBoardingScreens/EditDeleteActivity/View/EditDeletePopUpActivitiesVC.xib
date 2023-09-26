@@ -12,6 +12,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="EditDeletePopUpActivitiesVC" customModule="TakeMyTrip" customModuleProvider="target">
             <connections>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="viewContentView" destination="i5M-Pr-FkT" id="HN5-vl-52e"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
@@ -48,9 +49,8 @@
                                     <rect key="frame" x="0.0" y="0.0" width="120" height="40"/>
                                     <subviews>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UYa-NM-Mw2">
-                                            <rect key="frame" x="54" y="5.5" width="35" height="29"/>
+                                            <rect key="frame" x="62" y="5.5" width="34" height="29"/>
                                             <constraints>
-                                                <constraint firstAttribute="width" constant="35" id="HFO-eX-GXv"/>
                                                 <constraint firstAttribute="height" constant="29" id="ht1-Ip-j1d"/>
                                             </constraints>
                                             <fontDescription key="fontDescription" type="system" weight="medium" pointSize="19"/>
@@ -63,7 +63,6 @@
                                             <rect key="frame" x="20" y="8" width="24" height="24"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="24" id="FX1-AI-mfw"/>
-                                                <constraint firstAttribute="width" constant="24" id="gVW-mC-0Ub"/>
                                             </constraints>
                                         </imageView>
                                     </subviews>
@@ -73,7 +72,7 @@
                                         <constraint firstAttribute="height" constant="40" id="FUW-bL-Xgz"/>
                                         <constraint firstItem="Kd8-pw-pGk" firstAttribute="leading" secondItem="6H2-cx-z5N" secondAttribute="leading" constant="20" symbolic="YES" id="JA2-i6-McQ"/>
                                         <constraint firstItem="UYa-NM-Mw2" firstAttribute="centerY" secondItem="Kd8-pw-pGk" secondAttribute="centerY" id="dM0-iQ-MCx"/>
-                                        <constraint firstItem="UYa-NM-Mw2" firstAttribute="leading" secondItem="Kd8-pw-pGk" secondAttribute="trailing" constant="10" id="hNG-rb-jkw"/>
+                                        <constraint firstItem="UYa-NM-Mw2" firstAttribute="leading" secondItem="Kd8-pw-pGk" secondAttribute="trailing" constant="18" id="hNG-rb-jkw"/>
                                         <constraint firstItem="Kd8-pw-pGk" firstAttribute="centerY" secondItem="6H2-cx-z5N" secondAttribute="centerY" id="r69-H1-X9D"/>
                                     </constraints>
                                 </view>
@@ -81,9 +80,8 @@
                                     <rect key="frame" x="0.0" y="45" width="120" height="40"/>
                                     <subviews>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ssI-ql-MZV">
-                                            <rect key="frame" x="47" y="5.5" width="69" height="29"/>
+                                            <rect key="frame" x="60" y="5.5" width="57" height="29"/>
                                             <constraints>
-                                                <constraint firstAttribute="width" constant="69" id="Dbp-7J-7bk"/>
                                                 <constraint firstAttribute="height" constant="29" id="rhP-FR-ygM"/>
                                             </constraints>
                                             <fontDescription key="fontDescription" type="system" weight="medium" pointSize="19"/>
@@ -96,13 +94,12 @@
                                             <rect key="frame" x="20" y="9" width="17" height="22"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="22" id="L7g-IP-LEN"/>
-                                                <constraint firstAttribute="width" constant="17" id="vpY-bh-tO3"/>
                                             </constraints>
                                         </imageView>
                                     </subviews>
                                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                     <constraints>
-                                        <constraint firstItem="ssI-ql-MZV" firstAttribute="leading" secondItem="qY3-E3-wR1" secondAttribute="trailing" constant="10" id="FFo-O9-3hh"/>
+                                        <constraint firstItem="ssI-ql-MZV" firstAttribute="leading" secondItem="qY3-E3-wR1" secondAttribute="trailing" constant="23" id="FFo-O9-3hh"/>
                                         <constraint firstAttribute="height" constant="40" id="RWy-VO-E2W"/>
                                         <constraint firstItem="qY3-E3-wR1" firstAttribute="centerY" secondItem="GwU-WE-Cn8" secondAttribute="centerY" id="eM5-BS-ERt"/>
                                         <constraint firstItem="ssI-ql-MZV" firstAttribute="centerY" secondItem="qY3-E3-wR1" secondAttribute="centerY" id="eVa-U6-vpc"/>
@@ -141,7 +138,7 @@
                     <real key="value" value="47"/>
                 </userDefinedRuntimeAttribute>
             </userDefinedRuntimeAttributes>
-            <point key="canvasLocation" x="-37.600000000000001" y="-11.244377811094454"/>
+            <point key="canvasLocation" x="-146" y="-196"/>
         </view>
     </objects>
     <resources>

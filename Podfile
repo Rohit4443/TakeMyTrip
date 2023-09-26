@@ -14,6 +14,7 @@ target 'TakeMyTrip' do
    pod 'Swifter', :git => "https://github.com/mattdonnelly/Swifter.git"
    pod 'GrowingTextView'
    pod 'SwiftyStoreKit'
+   pod 'IQKeyboardManager'
 
   target 'TakeMyTripTests' do
     inherit! :search_paths

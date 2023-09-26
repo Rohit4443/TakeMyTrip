@@ -20,20 +20,23 @@
                     <view contentMode="scaleAspectFill" translatesAutoresizingMaskIntoConstraints="NO" id="bDE-O0-wa6">
                         <rect key="frame" x="0.0" y="0.0" width="271" height="217"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="img1" translatesAutoresizingMaskIntoConstraints="NO" id="lIU-hW-fqo">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img1" translatesAutoresizingMaskIntoConstraints="NO" id="lIU-hW-fqo">
                                 <rect key="frame" x="0.0" y="0.0" width="271" height="217"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lorem Ipsum is simply dummy text of the printing and typesetting industry." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pia-Ta-fvd">
                                 <rect key="frame" x="10" y="183" width="251" height="24"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="10"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" red="0.93725490199999995" green="0.35294117650000001" blue="0.0" alpha="0.70999999999999996" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstAttribute="bottom" secondItem="pia-Ta-fvd" secondAttribute="bottom" constant="10" id="3fh-7v-Jxk"/>
+                            <constraint firstItem="lIU-hW-fqo" firstAttribute="top" secondItem="bDE-O0-wa6" secondAttribute="top" id="93o-iA-iU9"/>
+                            <constraint firstAttribute="bottom" secondItem="lIU-hW-fqo" secondAttribute="bottom" id="Fc6-8c-fvE"/>
+                            <constraint firstItem="lIU-hW-fqo" firstAttribute="leading" secondItem="bDE-O0-wa6" secondAttribute="leading" id="RPK-E3-ESh"/>
+                            <constraint firstAttribute="trailing" secondItem="lIU-hW-fqo" secondAttribute="trailing" id="ZWE-8h-UNr"/>
                             <constraint firstAttribute="trailing" secondItem="pia-Ta-fvd" secondAttribute="trailing" constant="10" id="bMf-ys-Cx4"/>
                             <constraint firstItem="pia-Ta-fvd" firstAttribute="leading" secondItem="bDE-O0-wa6" secondAttribute="leading" constant="10" id="fTg-2X-gIL"/>
                         </constraints>

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -26,8 +26,8 @@
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zrS-8v-axC">
                         <rect key="frame" x="0.0" y="0.0" width="367" height="95"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img5" translatesAutoresizingMaskIntoConstraints="NO" id="nNd-7G-7j4">
-                                <rect key="frame" x="0.0" y="19" width="58" height="57"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_imgprofile" translatesAutoresizingMaskIntoConstraints="NO" id="nNd-7G-7j4">
+                                <rect key="frame" x="30" y="19" width="58" height="57"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="58" id="wKO-as-x7t"/>
                                     <constraint firstAttribute="height" constant="57" id="xOl-Hg-TZj"/>
@@ -37,13 +37,13 @@
                                 </userDefinedRuntimeAttributes>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Waloi" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oWV-yW-Amp">
-                                <rect key="frame" x="73" y="35.5" width="48.5" height="24"/>
+                                <rect key="frame" x="103" y="35.5" width="48.5" height="24"/>
                                 <fontDescription key="fontDescription" name="Poppins-Medium" family="Poppins" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hLT-dA-pKn">
-                                <rect key="frame" x="267" y="30" width="100" height="35"/>
+                                <rect key="frame" x="237" y="30" width="100" height="35"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="100" id="DmQ-UW-w8f"/>
@@ -69,10 +69,10 @@
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstAttribute="trailing" secondItem="hLT-dA-pKn" secondAttribute="trailing" id="8zi-SN-KQw"/>
+                            <constraint firstAttribute="trailing" secondItem="hLT-dA-pKn" secondAttribute="trailing" constant="30" id="8zi-SN-KQw"/>
                             <constraint firstItem="hLT-dA-pKn" firstAttribute="centerY" secondItem="oWV-yW-Amp" secondAttribute="centerY" id="Hhi-7M-3w9"/>
                             <constraint firstItem="nNd-7G-7j4" firstAttribute="centerY" secondItem="zrS-8v-axC" secondAttribute="centerY" id="JoX-pw-ptd"/>
-                            <constraint firstItem="nNd-7G-7j4" firstAttribute="leading" secondItem="zrS-8v-axC" secondAttribute="leading" id="MKx-MW-9SU"/>
+                            <constraint firstItem="nNd-7G-7j4" firstAttribute="leading" secondItem="zrS-8v-axC" secondAttribute="leading" constant="30" id="MKx-MW-9SU"/>
                             <constraint firstItem="oWV-yW-Amp" firstAttribute="centerY" secondItem="nNd-7G-7j4" secondAttribute="centerY" id="XKK-y3-3iI"/>
                             <constraint firstItem="oWV-yW-Amp" firstAttribute="leading" secondItem="nNd-7G-7j4" secondAttribute="trailing" constant="15" id="xcr-6W-lOr"/>
                         </constraints>
@@ -98,7 +98,7 @@
         </tableViewCell>
     </objects>
     <resources>
-        <image name="img5" width="1824" height="1368"/>
+        <image name="ic_imgprofile" width="58" height="58"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

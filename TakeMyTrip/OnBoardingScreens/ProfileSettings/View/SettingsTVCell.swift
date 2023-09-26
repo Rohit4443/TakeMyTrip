@@ -18,13 +18,15 @@ class SettingsTVCell: UITableViewCell {
     override func awakeFromNib() {
         
         super.awakeFromNib()
-        // Initialization code
+        vWPubPriv.layer.shadowColor = UIColor(r: 165, g: 165, b: 165, a: 0.25).cgColor
+        vWPubPriv.shadowRadius = 2
+        
     }
     
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
         
-        
+    
         
     }
     

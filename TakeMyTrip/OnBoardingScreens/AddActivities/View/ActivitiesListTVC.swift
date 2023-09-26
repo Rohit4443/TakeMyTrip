@@ -29,7 +29,8 @@ class ActivitiesListTVC: UITableViewCell {
                 vWBackground.layer.borderColor = UIColor.init(r: 239, g: 90, b: 0, a: 1).cgColor
                 vWBackground.layer.borderWidth = 1
             } else {
-                vWBackground.layer.borderColor = UIColor.clear.cgColor
+                vWBackground.layer.borderWidth = 0.4
+                vWBackground.layer.borderColor = UIColor.init(r: 195, g: 195, b: 195, a: 1).cgColor
             }
         }
     }

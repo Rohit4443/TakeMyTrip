@@ -32,10 +32,9 @@
                             <rect key="frame" x="30" y="20" width="345" height="80"/>
                             <subviews>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sgg-dn-ej1">
-                                    <rect key="frame" x="0.0" y="32.5" width="36.5" height="15"/>
+                                    <rect key="frame" x="0.0" y="32.5" width="40" height="15"/>
                                     <constraints>
                                         <constraint firstAttribute="height" constant="15" id="itL-Vh-KOf"/>
-                                        <constraint firstAttribute="width" constant="36.329999999999998" id="oH2-AI-BDz"/>
                                     </constraints>
                                     <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                     <state key="normal" image="ic_backbtn"/>
@@ -44,10 +43,9 @@
                                     </connections>
                                 </button>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Following" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SuG-ME-lMD">
-                                    <rect key="frame" x="51.5" y="24" width="100" height="32"/>
+                                    <rect key="frame" x="55" y="25.5" width="100" height="29.5"/>
                                     <constraints>
-                                        <constraint firstAttribute="height" constant="32" id="Ddj-we-eUC"/>
-                                        <constraint firstAttribute="width" constant="100" id="bMq-FQ-U4L"/>
+                                        <constraint firstAttribute="height" constant="29.5" id="DA0-wB-q06"/>
                                     </constraints>
                                     <fontDescription key="fontDescription" name="Poppins-Medium" family="Poppins" pointSize="21"/>
                                     <nil key="textColor"/>
@@ -97,7 +95,7 @@
                             </userDefinedRuntimeAttributes>
                         </view>
                         <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="ZFs-FZ-33M">
-                            <rect key="frame" x="30" y="110" width="325" height="557"/>
+                            <rect key="frame" x="0.0" y="110" width="375" height="557"/>
                             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             <connections>
                                 <outlet property="dataSource" destination="LVH-oJ-zBP" id="T9i-gO-IZc"/>
@@ -109,10 +107,10 @@
                     <constraints>
                         <constraint firstItem="9YW-go-jWX" firstAttribute="leading" secondItem="LVH-oJ-zBP" secondAttribute="leading" constant="30" id="N9c-XF-fQu"/>
                         <constraint firstAttribute="trailing" secondItem="9YW-go-jWX" secondAttribute="trailing" id="RuP-2C-OXd"/>
-                        <constraint firstAttribute="trailing" secondItem="ZFs-FZ-33M" secondAttribute="trailing" constant="20" id="UDc-GD-Aki"/>
+                        <constraint firstAttribute="trailing" secondItem="ZFs-FZ-33M" secondAttribute="trailing" id="UDc-GD-Aki"/>
                         <constraint firstAttribute="bottom" secondItem="ZFs-FZ-33M" secondAttribute="bottom" id="We2-BR-wfv"/>
                         <constraint firstItem="ZFs-FZ-33M" firstAttribute="top" secondItem="9YW-go-jWX" secondAttribute="bottom" constant="10" id="a70-Qw-YyS"/>
-                        <constraint firstItem="ZFs-FZ-33M" firstAttribute="leading" secondItem="LVH-oJ-zBP" secondAttribute="leading" constant="30" id="iHA-iS-Y9T"/>
+                        <constraint firstItem="ZFs-FZ-33M" firstAttribute="leading" secondItem="LVH-oJ-zBP" secondAttribute="leading" id="iHA-iS-Y9T"/>
                     </constraints>
                 </view>
             </subviews>
